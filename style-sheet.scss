@@ -1,2 +1,61 @@
 @charset "UTF-8"; 
-
+//-------Woocommerce-------
+.woocommerce{
+    //=========================
+    //||||||||||Grid|||||||||||
+    //=========================
+    #content {
+        //=========================
+        //-------Product Page------
+        //=========================
+        div.product{
+            div.woocommerce-product-gallery.images{
+                width: 33%; 
+                float: left;
+            }
+        }
+        .type-product div.summary.entry-summary{
+            width: 63%;
+            float: right;
+        }
+        .secondary-sidebar.sidebar{
+            width: 25%;
+            clear: none;
+        }
+        div#primary{
+            width: 74%;
+        }
+        div#secondary-left{
+            float: left;
+        }
+        div#secondary-right{
+            float: right;
+        }
+    }
+    //=========================
+    //||||||||Aparence|||||||||
+    //=========================
+    #content {
+        //=========================
+        //-------Product Page------
+        //=========================
+        div.product{
+            .summary.entry-summary{
+                margin-top: 0;
+            }
+            .product_title{
+                margin: 0;
+            }
+            .woocommerce-product-rating{
+                margin-bottom:0; 
+            }
+            div.title.line, div.autor.line{
+                font-family: "Oswald", sans-serif;
+                h2{
+                    font-size: 14px;
+                    display: inline;
+                }
+            }
+        }
+    }
+}

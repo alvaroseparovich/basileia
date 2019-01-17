@@ -1,3 +1,28 @@
-
+.woocommerce #content div.product div.woocommerce-product-gallery.images {
+  width: 33%;
+  float: left; }
+.woocommerce #content .type-product div.summary.entry-summary {
+  width: 63%;
+  float: right; }
+.woocommerce #content .secondary-sidebar.sidebar {
+  width: 25%;
+  clear: none; }
+.woocommerce #content div#primary {
+  width: 74%; }
+.woocommerce #content div#secondary-left {
+  float: left; }
+.woocommerce #content div#secondary-right {
+  float: right; }
+.woocommerce #content div.product .summary.entry-summary {
+  margin-top: 0; }
+.woocommerce #content div.product .product_title {
+  margin: 0; }
+.woocommerce #content div.product .woocommerce-product-rating {
+  margin-bottom: 0; }
+.woocommerce #content div.product div.title.line, .woocommerce #content div.product div.autor.line {
+  font-family: "Oswald", sans-serif; }
+  .woocommerce #content div.product div.title.line h2, .woocommerce #content div.product div.autor.line h2 {
+    font-size: 14px;
+    display: inline; }
 
 /*# sourceMappingURL=style-sheet.css.map */

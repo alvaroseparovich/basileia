@@ -3,7 +3,8 @@
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri().'/style-sheet.css' );
+  }
 
 //=============================
 //---------Helpers-------------
@@ -41,3 +42,8 @@ function retrieve_var1_replacement( $especial_attribute=0, $all=0 ) {
       }
     }
   }
+
+//-------
+//-------
+
+//remove_action( "woocommerce_single_product_summary", woocommerce_template_single_price(), 10)
