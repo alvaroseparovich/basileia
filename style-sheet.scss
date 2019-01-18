@@ -31,7 +31,20 @@
         div#secondary-right{
             float: right;
         }
+        .group-sumary {
+            display: flex;
+            flex-wrap: wrap;
+            .price, .group{width: 48%;}
+            .product_meta{width: 100%;}
+            .price{
+                > *{display: block;}
+                ins{
+                    font-size: 2em;
+                }
+            }
+        }
     }
+
     //=========================
     //||||||||Aparence|||||||||
     //=========================
@@ -56,6 +69,42 @@
                     display: inline;
                 }
             }
+            div.product_meta h2{
+                font-size: 14px;
+            }
+            .cart{
+                border:white;
+                padding-bottom: 0;
+                button[name=add-to-cart]{
+                    background: #1a8400;
+                    border: none;
+                    width: 100%;
+                    margin: 0.5em 0 0 ;
+                    border-radius: 0.25em;
+
+                    &:hover{
+                        color: white;
+                        box-shadow: #1a840099 2px 2px 7px;
+                    }
+                }
+            }
+            .yith-wcwl-add-to-wishlist{
+                margin: 0;
+            }
+            .stock{
+                font-weight: bolder;
+                &.in-stock{margin:0;}
+                &.out-of-stock{
+                    text-align: center;
+                    padding: 0.1em;
+                    border-radius: 0.25em;
+                    color: white;
+                    background: #d23f3f;
+                    margin: 0;
+                    padding: 1em 0;
+                }
+            }
+
         }
     }
 }
