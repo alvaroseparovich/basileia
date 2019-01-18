@@ -79,3 +79,20 @@ add_action( "woocommerce_single_product_summary", "end_block", 55);//start an od
 add_action( "woocommerce_single_product_summary", "start_p2_block", 29);
 add_action( "woocommerce_single_product_summary", "end_block", 35);
 
+//Add or reduce number of products to be bought.
+function add_cart_button_less(){  global $product;
+  if(number_format( $product->stock,0,'','' ) > 1 or $product->manage_stock=="no") {
+      echo'<button class="btElLess" type="button" onclick="removeItem(); return false;">-</button></div>';
+      }    }
+function add_cart_button_plus(){   global $product;
+  if(number_format( $product->stock,0,'','' ) > 1 or $product->manage_stock=="no") {
+      echo'<div class="counter"><button class="btElPlus" type="button" onclick="addItem(); return false;">+</button>';
+      }    }
+  
+function add_buttons_js_snippet(){echo'<script>
+  function removeItem(){	e = document.querySelector("form.cart .quantity > input.input-text");	n = e.value;newN = parseInt(n)-1;  if (!(newN < e.min)){ e.value = newN; }}
+  function addItem(){	e = document.querySelector("form.cart .quantity > input.input-text");	n = e.value;newN = parseInt(n)+1;  if (e.max==""){e.value = newN;}    if (!(newN > e.max)){ e.value = newN; }} 
+</script>';}
+add_filter('woocommerce_after_add_to_cart_quantity','add_cart_button_less', 0);
+add_filter('woocommerce_before_add_to_cart_quantity','add_cart_button_plus', 0);
+add_action('wp_head', 'add_buttons_js_snippet');

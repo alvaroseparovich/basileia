@@ -1,4 +1,7 @@
 @charset "UTF-8"; 
+
+$primary-color: #4595e1;
+
 //-------Woocommerce-------
 .woocommerce{
     //=========================
@@ -37,9 +40,11 @@
             .price, .group{width: 48%;}
             .product_meta{width: 100%;}
             .price{
+                padding: 2em 0 0;
                 > *{display: block;}
                 ins{
                     font-size: 2em;
+                    text-decoration: none;
                 }
             }
         }
@@ -53,6 +58,8 @@
         //-------Product Page------
         //=========================
         div.product{
+
+            //SUMMARY START--------------------
             .summary.entry-summary{
                 margin-top: 0;
             }
@@ -73,6 +80,35 @@
                 font-size: 14px;
             }
             .cart{
+                .quantity{float:none;display: inline;
+                    .qty{
+                        height: 2em;
+                    }
+                    //hide buttons natives from browser
+                    input[type="number"] {
+                        -moz-appearance: textfield !important; 
+                        border: none;
+                        &::-webkit-outer-spin-button, 
+                        &::-webkit-inner-spin-button{
+                            -webkit-appearance: none !important;
+                            margin: 0 !important;
+                        }
+                    }
+                }
+                .counter{
+                    display: flex;
+                    background: $primary-color;
+                    border: $primary-color 2px solid;
+                }
+                .btElPlus, .btElLess{
+                    padding: 0.1em 5%;
+                    width: 50%;
+                    color: white;
+                    font-size: 2.5em;
+                    border: none;
+                    background: $primary-color;
+
+                }
                 border:white;
                 padding-bottom: 0;
                 button[name=add-to-cart]{
@@ -103,6 +139,18 @@
                     margin: 0;
                     padding: 1em 0;
                 }
+            }
+
+        }
+
+        //SUMMARY END--------------------
+        .woocommerce-tabs.wc-tabs-wrapper{
+            .woocommerce-Tabs-panel{
+                display: block!important;
+                margin-bottom: 5em;
+            }
+            .tabs.wc-tabs{
+                display: none;
             }
 
         }

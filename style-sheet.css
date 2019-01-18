@@ -20,10 +20,13 @@
     width: 48%; }
   .woocommerce #content .group-sumary .product_meta {
     width: 100%; }
-  .woocommerce #content .group-sumary .price > * {
-    display: block; }
-  .woocommerce #content .group-sumary .price ins {
-    font-size: 2em; }
+  .woocommerce #content .group-sumary .price {
+    padding: 2em 0 0; }
+    .woocommerce #content .group-sumary .price > * {
+      display: block; }
+    .woocommerce #content .group-sumary .price ins {
+      font-size: 2em;
+      text-decoration: none; }
 .woocommerce #content div.product .summary.entry-summary {
   margin-top: 0; }
 .woocommerce #content div.product .product_title {
@@ -40,6 +43,28 @@
 .woocommerce #content div.product .cart {
   border: white;
   padding-bottom: 0; }
+  .woocommerce #content div.product .cart .quantity {
+    float: none;
+    display: inline; }
+    .woocommerce #content div.product .cart .quantity .qty {
+      height: 2em; }
+    .woocommerce #content div.product .cart .quantity input[type="number"] {
+      -moz-appearance: textfield !important;
+      border: none; }
+      .woocommerce #content div.product .cart .quantity input[type="number"]::-webkit-outer-spin-button, .woocommerce #content div.product .cart .quantity input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important; }
+  .woocommerce #content div.product .cart .counter {
+    display: flex;
+    background: #4595e1;
+    border: #4595e1 2px solid; }
+  .woocommerce #content div.product .cart .btElPlus, .woocommerce #content div.product .cart .btElLess {
+    padding: 0.1em 5%;
+    width: 50%;
+    color: white;
+    font-size: 2.5em;
+    border: none;
+    background: #4595e1; }
   .woocommerce #content div.product .cart button[name=add-to-cart] {
     background: #1a8400;
     border: none;
@@ -63,5 +88,10 @@
     background: #d23f3f;
     margin: 0;
     padding: 1em 0; }
+.woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel {
+  display: block !important;
+  margin-bottom: 5em; }
+.woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
+  display: none; }
 
 /*# sourceMappingURL=style-sheet.css.map */

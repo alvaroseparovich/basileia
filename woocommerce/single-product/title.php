@@ -33,6 +33,7 @@ echo "</div>";
 
 
 //Adictional Content
+
 global $post;
 echo '<div class="woocommerce-product-details__short-description">';
 echo '<div  class="short-detail">';
