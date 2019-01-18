@@ -16,10 +16,12 @@
 .woocommerce #content .group-sumary {
   display: flex;
   flex-wrap: wrap; }
-  .woocommerce #content .group-sumary .price, .woocommerce #content .group-sumary .group {
+  .woocommerce #content .group-sumary .price, .woocommerce #content .group-sumary .group, .woocommerce #content .group-sumary .product_meta, .woocommerce #content .group-sumary .woocommerce-product-book-details-seo {
     width: 48%; }
-  .woocommerce #content .group-sumary .product_meta {
-    width: 100%; }
+  .woocommerce #content .group-sumary .woocommerce-product-book-details-seo, .woocommerce #content .group-sumary .product_meta {
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+    padding: 10px 0; }
   .woocommerce #content .group-sumary .price {
     padding: 2em 0 0; }
     .woocommerce #content .group-sumary .price > * {

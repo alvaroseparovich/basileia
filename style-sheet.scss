@@ -37,8 +37,12 @@ $primary-color: #4595e1;
         .group-sumary {
             display: flex;
             flex-wrap: wrap;
-            .price, .group{width: 48%;}
-            .product_meta{width: 100%;}
+            .price, .group,.product_meta,.woocommerce-product-book-details-seo{width: 48%;}
+            .woocommerce-product-book-details-seo,.product_meta{
+                border-top: 1px dotted #ddd;
+                border-bottom: 1px dotted #ddd;
+                padding: 10px 0;
+            }
             .price{
                 padding: 2em 0 0;
                 > *{display: block;}

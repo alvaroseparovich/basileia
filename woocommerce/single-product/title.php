@@ -30,33 +30,3 @@ if ( $post->post_excerpt ) {
 	echo '</i></h2>';
 }
 echo "</div>";
-
-
-//Adictional Content
-
-global $post;
-echo '<div class="woocommerce-product-details__short-description">';
-echo '<div  class="short-detail">';
-$post_id = get_post()->ID;
-echo '<div class="title line"> Nome: ';
-the_title( '<h2><i>', retrieve_var1_replacement().'</i></h2>' );
-echo '</div>';
-$retrieve = wp_get_post_terms( $post_id , 'pa_autor');
-if($retrieve and !is_wp_error($retrieve) ){
-	echo '<div class="autor line"> Autor:';
-	foreach ($retrieve as $key => $value) {
-		echo ' <h2><a href="'.get_term_link( $value->slug, 'pa_autor' ) . '">';
-		echo $value->name . '</a></h2> ';
-	}
-	echo'</h2></div>';
-}
-$retrieve = wp_get_post_terms( $post_id , 'pa_editora');
-if($retrieve and !is_wp_error($retrieve) ){
-	echo '<div class="editora line"> Editora:';
-	foreach ($retrieve as $key => $value) {
-		echo ' <h2><a href="'. get_term_link( $value->slug , 'pa_editora' ) . '">';
-		echo $value->name . '</a></h2> ';
-	}
-	echo'</h2></div>';
-}
-echo '</div></div>';
