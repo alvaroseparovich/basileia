@@ -46,4 +46,5 @@ function retrieve_var1_replacement( $especial_attribute=0, $all=0 ) {
 //-------
 //-------
 
-//remove_action( "woocommerce_single_product_summary", woocommerce_template_single_price(), 10)
+remove_action( "woocommerce_single_product_summary", "woocommerce_template_single_rating");
+add_action( "woocommerce_single_product_summary", "woocommerce_template_single_rating", 1);
