@@ -74,8 +74,6 @@ function end_block(){  echo"</div>";  return;};
 add_action( "woocommerce_single_product_summary", "start_price_block", 11);
 add_action( "woocommerce_single_product_summary", "end_block", 35);
 add_action( "woocommerce_single_product_summary", "end_block", 55);//start an oder block
-//add_action( "woocommerce_single_product_summary", "start_p1_block", 11);
-//add_action( "woocommerce_single_product_summary", "end_block", 25);
 add_action( "woocommerce_single_product_summary", "start_p2_block", 29);
 add_action( "woocommerce_single_product_summary", "end_block", 35);
 add_action( "woocommerce_single_product_summary", "summary_seo_info", 39);
