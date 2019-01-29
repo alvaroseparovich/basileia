@@ -57,6 +57,17 @@ function retrieve_var1_replacement( $especial_attribute=0, $all=0 ) {
 //-------
 
 
+//==============================
+//----------Pre set-up----------
+//==============================
+//function basileia_setup() {
+  // Cropping the images to different sizes to be used in the theme
+  //add_image_size( 'basileia-medium-image', 240, 240);
+  //add_image_size( 'basileia-small', 110, 120);
+  // Cropping the images to different sizes to be used in the theme **************REMOVE*****************
+//}
+//add_action( 'after_setup_theme', 'basileia_setup', 11 );
+
 //=============================
 //---------product Page--------
 //=============================
@@ -94,7 +105,7 @@ function add_cart_button_less(){  global $product;
   if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()=="no") {
       echo'<button class="btElLess" type="button" onclick="removeItem(); return false;">-</button></div>';
       }    }
-function add_cart_button_plus(){   global $product;
+function add_cart_button_plus(){  global $product;
   if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()=="no") {
       echo'<div class="counter"><button class="btElPlus" type="button" onclick="addItem(); return false;">+</button>';
       }    }
@@ -130,4 +141,23 @@ function summary_seo_info(){
     echo'</h2></div>';
   }
   echo '</div></div>';
+}
+
+//=============================
+//---------Loop Page--------
+//=============================
+
+if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
+  /**
+  * Show the product H3 title in the product loop.
+  */
+  function woocommerce_template_loop_product_title() {
+  echo '<h3 class=”woocommerce-loop-product__title”>' . get_the_title() . '</h3>';
+  if (wp_get_post_terms(get_post()->ID, "pa_autor") and ! is_wp_error( wp_get_post_terms(get_post()->ID, "pa_autor") ) ){
+    echo '<h4>'. wp_get_post_terms(get_post()->ID, "pa_autor")[0]->name .'</h4>';  
+  }else{
+    echo "<h5>-</h5>";
+  }
+  //var_dump(wp_get_post_terms(get_post()->ID, "pa_autor"));
+  }
 }
