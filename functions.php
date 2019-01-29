@@ -4,7 +4,17 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri().'/style-sheet.css' );
+
+    wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
+    
   }
+//get theme dir path
+function basileia_dir(){
+  return get_stylesheet_directory();
+}
+
+require_once basileia_dir() . '/inc/widgets.php';
+
 
 //=============================
 //---------Helpers-------------
@@ -81,11 +91,11 @@ add_action( "woocommerce_single_product_summary", "summary_seo_info", 39);
 
 //Add or reduce number of products to be bought.
 function add_cart_button_less(){  global $product;
-  if(number_format( $product->stock,0,'','' ) > 1 or $product->manage_stock=="no") {
+  if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()=="no") {
       echo'<button class="btElLess" type="button" onclick="removeItem(); return false;">-</button></div>';
       }    }
 function add_cart_button_plus(){   global $product;
-  if(number_format( $product->stock,0,'','' ) > 1 or $product->manage_stock=="no") {
+  if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()=="no") {
       echo'<div class="counter"><button class="btElPlus" type="button" onclick="addItem(); return false;">+</button>';
       }    }
   
