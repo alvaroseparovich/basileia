@@ -29,6 +29,27 @@
     .woocommerce #content .group-sumary .price ins, .woocommerce-page #content .group-sumary .price ins {
       font-size: 2em;
       text-decoration: none; }
+.woocommerce #content ul.products.columns-4 li.product, .woocommerce-page #content ul.products.columns-4 li.product {
+  margin: 0 1% 2.992em 0;
+  width: 24%; }
+  .woocommerce #content ul.products.columns-4 li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail, .woocommerce-page #content ul.products.columns-4 li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 270px;
+    margin: 0 0 1em !important;
+    display: inline; }
+  .woocommerce #content ul.products.columns-4 li.product .loop-img, .woocommerce-page #content ul.products.columns-4 li.product .loop-img {
+    height: 274px; }
+  .woocommerce #content ul.products.columns-4 li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link, .woocommerce-page #content ul.products.columns-4 li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset; }
+  .woocommerce #content ul.products.columns-4 li.product h3.woocommerce-loop-product__title, .woocommerce-page #content ul.products.columns-4 li.product h3.woocommerce-loop-product__title {
+    min-height: 3em; }
+.woocommerce #content ins, .woocommerce-page #content ins {
+  text-decoration: none; }
 .woocommerce #content div.product .summary.entry-summary, .woocommerce-page #content div.product .summary.entry-summary {
   margin-top: 0; }
 .woocommerce #content div.product .product_title, .woocommerce-page #content div.product .product_title {
@@ -95,23 +116,20 @@
   margin-bottom: 5em; }
 .woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs, .woocommerce-page #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
   display: none; }
-.woocommerce #content ul.products li.product, .woocommerce-page #content ul.products li.product {
-  margin: 0 1% 2.992em 0;
-  width: 24%; }
-  .woocommerce #content ul.products li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail, .woocommerce-page #content ul.products li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-    height: auto;
-    width: auto;
-    max-width: 200px;
-    max-height: 270px;
-    margin: 0 0 1em !important;
-    display: inline; }
-  .woocommerce #content ul.products li.product .loop-img, .woocommerce-page #content ul.products li.product .loop-img {
-    height: 274px; }
-  .woocommerce #content ul.products li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link, .woocommerce-page #content ul.products li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: unset; }
+.woocommerce #content ul.products.columns-4 li.product span.onsale, .woocommerce-page #content ul.products.columns-4 li.product span.onsale {
+  display: none; }
+.woocommerce #content ul.products.columns-4 li.product .star-rating, .woocommerce-page #content ul.products.columns-4 li.product .star-rating {
+  order: -1;
+  position: absolute; }
+.woocommerce #content ul.products.columns-4 li.product del, .woocommerce-page #content ul.products.columns-4 li.product del {
+  font-size: 0.8em; }
+.woocommerce #content ul.products.columns-4 li.product ins, .woocommerce #content ul.products.columns-4 li.product del, .woocommerce-page #content ul.products.columns-4 li.product ins, .woocommerce-page #content ul.products.columns-4 li.product del {
+  display: block; }
+
+.special-menu {
+  background: #2b3e5e;
+  color: #fff !important;
+  width: 225px; }
 
 @media (min-width: 768px) {
   body .mobile-only {
