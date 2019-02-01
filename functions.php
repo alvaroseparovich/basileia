@@ -5,7 +5,7 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri().'/style-sheet.css' );
 
-    wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
+    //wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
     
 }
 
