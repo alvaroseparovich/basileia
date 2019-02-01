@@ -7,13 +7,15 @@ function my_theme_enqueue_styles() {
 
     wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
     
-  }
+}
+
 //get theme dir path
 function basileia_dir(){
   return get_stylesheet_directory();
 }
 
 require_once basileia_dir() . '/inc/widgets.php';
+include( basileia_dir() . '/short-codes.php' );
 
 
 //=============================
