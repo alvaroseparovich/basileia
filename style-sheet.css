@@ -1,3 +1,5 @@
+.woocommerce.right-sidebar div#primary, .woocommerce-page.right-sidebar div#primary {
+  width: 74%; }
 .woocommerce #content div.product div.woocommerce-product-gallery.images, .woocommerce-page #content div.product div.woocommerce-product-gallery.images {
   width: 33%;
   float: left; }
@@ -7,8 +9,6 @@
 .woocommerce #content .secondary-sidebar.sidebar, .woocommerce-page #content .secondary-sidebar.sidebar {
   width: 25%;
   clear: none; }
-.woocommerce #content div#primary, .woocommerce-page #content div#primary {
-  width: 74%; }
 .woocommerce #content div#secondary-left, .woocommerce-page #content div#secondary-left {
   float: left; }
 .woocommerce #content div#secondary-right, .woocommerce-page #content div#secondary-right {
