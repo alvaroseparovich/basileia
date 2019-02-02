@@ -1,5 +1,16 @@
 <?php
+/*
+Here we have some functions that we use Alot or oftenly
 
+*/
+
+
+//get theme dir path
+function basileia_dir(){
+  return get_stylesheet_directory();
+}
+
+//get autor or brand to show
 function retrieve_var1_replacement( $especial_attribute=0, $all=0 ) {
     //only run on products
     if( !is_product() ){return;}

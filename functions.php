@@ -1,12 +1,7 @@
 <?php
 
-//get theme dir path
-function basileia_dir(){
-  return get_stylesheet_directory();
-}
-
 //Functions to remove or add css and scripts 
-require_once basileia_dir() . '/inc/style-and-scripts-wp-enqueue.php';
+require_once basileia_dir() . '/inc/func-wp-enqueue.php';
 
 //Functions to custom product page
 require_once basileia_dir() . '/inc/func-product-page.php';
