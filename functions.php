@@ -1,20 +1,20 @@
 <?php
 
 //Functions to remove or add css and scripts 
-require_once basileia_dir() . '/inc/func-wp-enqueue.php';
+require_once get_stylesheet_directory() . '/inc/func-wp-enqueue.php';
 
 //Functions to custom product page
-require_once basileia_dir() . '/inc/func-product-page.php';
+require_once get_stylesheet_directory() . '/inc/func-product-page.php';
 
 //Functions to costumize loop pages
-require_once basileia_dir() . '/inc/func-loop-page.php';
+require_once get_stylesheet_directory() . '/inc/func-loop-page.php';
 
 //Helpers
-require_once basileia_dir() . '/inc/func-helper.php';
+require_once get_stylesheet_directory() . '/inc/func-helper.php';
 
 
-require_once basileia_dir() . '/inc/widgets.php';
-include( basileia_dir() . '/short-codes.php' );
+require_once get_stylesheet_directory() . '/inc/widgets.php';
+include( get_stylesheet_directory() . '/short-codes.php' );
 
 
 //==============================
