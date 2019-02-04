@@ -57,6 +57,10 @@
     justify-content: unset; }
   .woocommerce #content ul.products.columns-4 li.product h3.woocommerce-loop-product__title, .woocommerce-page #content ul.products.columns-4 li.product h3.woocommerce-loop-product__title {
     min-height: 3em; }
+.woocommerce input#menu-search.basileia-search, .woocommerce-page input#menu-search.basileia-search {
+  height: 24px;
+  padding: 2px 0px 2px 9px;
+  max-width: 99%; }
 .woocommerce #content ins, .woocommerce-page #content ins {
   text-decoration: none; }
 .woocommerce #content div.product .summary.entry-summary, .woocommerce-page #content div.product .summary.entry-summary {
