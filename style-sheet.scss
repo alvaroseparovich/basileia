@@ -140,6 +140,7 @@ $color-2: #2b3e5e;
                 font-size: 14px;
             }
             .cart{
+                div.quantity.hidden{display: none;}
                 .quantity{float:none;display: inline;
                     .qty{
                         height: 2em;

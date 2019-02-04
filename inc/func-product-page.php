@@ -31,8 +31,8 @@ add_action( "woocommerce_single_product_summary", "summary_seo_info", 39);
 
 //Add or reduce number of products to be bought.
 function add_cart_button_less(){  global $product;
-  
-    if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()=="no") {
+
+    if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()==false) {
   
         echo'<button class="btElLess" type="button" onclick="removeItem(); return false;">-</button></div>';
   
@@ -41,7 +41,7 @@ function add_cart_button_less(){  global $product;
 
 function add_cart_button_plus(){  global $product;
 
-    if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()=="no") {
+    if(number_format( $product->get_stock_quantity(),0,'','' ) > 1 or $product->get_manage_stock()==false) {
 
         echo'<div class="counter"><button class="btElPlus" type="button" onclick="addItem(); return false;">+</button>';
 

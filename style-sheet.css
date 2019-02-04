@@ -75,6 +75,8 @@
 .woocommerce #content div.product .cart, .woocommerce-page #content div.product .cart {
   border: white;
   padding-bottom: 0; }
+  .woocommerce #content div.product .cart div.quantity.hidden, .woocommerce-page #content div.product .cart div.quantity.hidden {
+    display: none; }
   .woocommerce #content div.product .cart .quantity, .woocommerce-page #content div.product .cart .quantity {
     float: none;
     display: inline; }
