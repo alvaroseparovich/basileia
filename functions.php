@@ -3,14 +3,10 @@
 //Functions to remove or add css and scripts 
 require_once get_stylesheet_directory() . '/inc/func-wp-enqueue.php';
 
-<<<<<<< HEAD
-    //wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
-    
-}
-=======
+//wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
+
 //Functions to custom product page
 require_once get_stylesheet_directory() . '/inc/func-product-page.php';
->>>>>>> e083361e2a314f6ff354fa315c56a4a32b083803
 
 //Functions to costumize loop pages
 require_once get_stylesheet_directory() . '/inc/func-loop-page.php';
