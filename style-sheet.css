@@ -111,6 +111,15 @@
     background: #d23f3f;
     margin: 0;
     padding: 1em 0; }
+.woocommerce #content div.product .shop_attributes h3, .woocommerce-page #content div.product .shop_attributes h3 {
+  font-size: 16px;
+  margin: 0; }
+  .woocommerce #content div.product .shop_attributes h3 b, .woocommerce #content div.product .shop_attributes h3 a, .woocommerce-page #content div.product .shop_attributes h3 b, .woocommerce-page #content div.product .shop_attributes h3 a {
+    font-weight: 100;
+    color: black;
+    padding: 0.5em 0; }
+  .woocommerce #content div.product .shop_attributes h3 a, .woocommerce-page #content div.product .shop_attributes h3 a {
+    text-decoration: underline; }
 .woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel, .woocommerce-page #content .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel {
   display: block !important;
   margin-bottom: 5em; }
