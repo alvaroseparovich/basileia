@@ -34,14 +34,14 @@ function authors_shortcode( $atts ) {
     $string = "";
     $string = $string . '<div class="letra-autor '.$key.'">';
     foreach($ordered_terms as $key => $array_authors){
-        $string = $string .'<h4 class="letra">'.$key.'</h4>';
+        $string = $string .'<div class="Letter"><h4 class="letra">'.$key.'</h4>';
         $string = $string . '<ul class="lista-letra-autor">';
         foreach($array_authors as $k => $author){
             $at_link = esc_url( get_term_link( $author, $author->name ) ) ;
             $string = $string . '<a href="'.$at_link.'"><li class="nome-autor">'.$author->name.'</li></a>';
 
         }
-        $string = $string . '</ul>';
+        $string = $string . '</ul></div>';
     }
     $string = $string . '</div>';
 

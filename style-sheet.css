@@ -1,5 +1,14 @@
 .woocommerce.right-sidebar div#primary, .woocommerce-page.right-sidebar div#primary {
   width: 74%; }
+.woocommerce .wrapper.site-content .letra-autor, .woocommerce-page .wrapper.site-content .letra-autor {
+  display: flex;
+  flex-wrap: wrap; }
+  .woocommerce .wrapper.site-content .letra-autor .Letter, .woocommerce-page .wrapper.site-content .letra-autor .Letter {
+    width: 24%;
+    padding: 2em; }
+    .woocommerce .wrapper.site-content .letra-autor .Letter ul, .woocommerce-page .wrapper.site-content .letra-autor .Letter ul {
+      list-style: none;
+      padding: 0; }
 .woocommerce #content div.product div.woocommerce-product-gallery.images, .woocommerce-page #content div.product div.woocommerce-product-gallery.images {
   width: 33%;
   float: left; }

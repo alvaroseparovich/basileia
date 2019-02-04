@@ -10,7 +10,28 @@ $color-2: #2b3e5e;
     //=========================
     &.right-sidebar div#primary{
             width: 74%;
-        } 
+    }
+
+    .wrapper.site-content{
+
+        .letra-autor{
+
+            display: flex;
+            flex-wrap: wrap;
+
+            .Letter {
+
+                width: 24%;
+                padding: 2em;
+
+                ul{
+
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
     #content {
         //=========================
         //-------Product Page------
