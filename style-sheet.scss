@@ -8,6 +8,9 @@ $color-2: #2b3e5e;
     //=========================
     //||||||||||Grid|||||||||||
     //=========================
+    &.right-sidebar div#primary{
+            width: 74%;
+        } 
     #content {
         //=========================
         //-------Product Page------
@@ -25,9 +28,6 @@ $color-2: #2b3e5e;
         .secondary-sidebar.sidebar{
             width: 25%;
             clear: none;
-        }
-        div#primary{
-            width: 74%;
         }
         div#secondary-left{
             float: left;
