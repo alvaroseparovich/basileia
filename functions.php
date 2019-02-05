@@ -18,6 +18,7 @@ require_once get_stylesheet_directory() . '/inc/func-helper.php';
 require_once get_stylesheet_directory() . '/inc/widgets.php';
 include( get_stylesheet_directory() . '/short-codes.php' );
 include( get_stylesheet_directory() . '/inc/widgets/basileia-search.php' );
+include( get_stylesheet_directory() . '/inc/widgets/basileia-home-featured-sliders.php' );
 include( get_stylesheet_directory() . '/inc/func-footer.php' );
 
 
