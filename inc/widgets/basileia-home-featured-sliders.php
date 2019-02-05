@@ -1,4 +1,26 @@
 <?php
+/** 
+*   That whole archive manage the first and main slider on Featured-Homepage
+*   The First function handle the options and the second to display it.
+*/
+
+/**
+ * Featured Slider Image Options
+ *
+ * @since Online Shop 1.0.0
+ *
+ * @param null
+ * @return array $online_shop_fs_image_display_options
+ */
+
+function online_shop_fs_image_display_options() {
+    $online_shop_fs_image_display_options =  array(
+        'full-screen-bg' => esc_html__( 'Full Screen Background', 'online-shop' ),
+        'responsive-img' => esc_html__( 'Responsive Image', 'online-shop' )
+    );
+    return apply_filters( 'online_shop_fs_image_display_options', $online_shop_fs_image_display_options );
+}
+
 /**
  * Display related posts from same category
  *
