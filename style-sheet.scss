@@ -51,7 +51,45 @@ input#menu-search.basileia-search {
             }
 
 }
-//-------Woocommerce-------
+body #content {
+    .featured-entries-col{
+        .star-rating{
+            display: none!important;
+        }
+        .loop-img {
+            height: 440px;
+        }
+        img.wp-post-image {
+            max-height: 400px;
+            width: auto !important;
+        }
+        span.price {
+            height: 35px;
+        }
+        
+    }
+
+    .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link{
+        .star-rating{
+            display: none!important;
+        }
+        .loop-img {
+            height: 310px;
+        }
+        span.price {
+            height: 35px;
+        }
+        img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
+            max-height: 300px;
+            width: auto!important;
+            height: auto;
+        }
+        h3.woocommerce-loop-product__title {
+            min-height: 75px;
+        }
+    }
+}
+    //-------Woocommerce-------
 .woocommerce, body{
     //=========================
     //||||||||||Grid|||||||||||
@@ -182,7 +220,7 @@ input#menu-search.basileia-search {
             .woocommerce-product-rating{
                 margin-bottom:0; 
             }
-            div.title.line, div.autor.line{
+            div.title.line, div.autor.line, div.editora.line{
                 font-family: "Oswald", sans-serif;
                 h2{
                     font-size: 14px;
@@ -191,6 +229,9 @@ input#menu-search.basileia-search {
             }
             div.product_meta h2{
                 font-size: 14px;
+            }
+            .group-sumary-pt2{
+                margin: 1em 0;
             }
             .cart{
                 div.quantity.hidden{display: none;}

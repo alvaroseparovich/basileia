@@ -26,6 +26,28 @@ input#menu-search.basileia-search {
   text-align: left;
   padding: 1em; }
 
+body #content .featured-entries-col .star-rating {
+  display: none !important; }
+body #content .featured-entries-col .loop-img {
+  height: 440px; }
+body #content .featured-entries-col img.wp-post-image {
+  max-height: 400px;
+  width: auto !important; }
+body #content .featured-entries-col span.price {
+  height: 35px; }
+body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link .star-rating {
+  display: none !important; }
+body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link .loop-img {
+  height: 310px; }
+body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link span.price {
+  height: 35px; }
+body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link img.attachment-shop_catalog.size-shop_catalog.wp-post-image {
+  max-height: 300px;
+  width: auto !important;
+  height: auto; }
+body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link h3.woocommerce-loop-product__title {
+  min-height: 75px; }
+
 .woocommerce.right-sidebar div#primary, body.right-sidebar div#primary {
   width: 74%; }
 .woocommerce .wrapper.site-content .letra-autor, body .wrapper.site-content .letra-autor {
@@ -97,13 +119,15 @@ input#menu-search.basileia-search {
   margin: 0; }
 .woocommerce #content div.product .woocommerce-product-rating, body #content div.product .woocommerce-product-rating {
   margin-bottom: 0; }
-.woocommerce #content div.product div.title.line, .woocommerce #content div.product div.autor.line, body #content div.product div.title.line, body #content div.product div.autor.line {
+.woocommerce #content div.product div.title.line, .woocommerce #content div.product div.autor.line, .woocommerce #content div.product div.editora.line, body #content div.product div.title.line, body #content div.product div.autor.line, body #content div.product div.editora.line {
   font-family: "Oswald", sans-serif; }
-  .woocommerce #content div.product div.title.line h2, .woocommerce #content div.product div.autor.line h2, body #content div.product div.title.line h2, body #content div.product div.autor.line h2 {
+  .woocommerce #content div.product div.title.line h2, .woocommerce #content div.product div.autor.line h2, .woocommerce #content div.product div.editora.line h2, body #content div.product div.title.line h2, body #content div.product div.autor.line h2, body #content div.product div.editora.line h2 {
     font-size: 14px;
     display: inline; }
 .woocommerce #content div.product div.product_meta h2, body #content div.product div.product_meta h2 {
   font-size: 14px; }
+.woocommerce #content div.product .group-sumary-pt2, body #content div.product .group-sumary-pt2 {
+  margin: 1em 0; }
 .woocommerce #content div.product .cart, body #content div.product .cart {
   border: white;
   padding-bottom: 0; }
