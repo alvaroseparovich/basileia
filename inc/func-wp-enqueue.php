@@ -27,4 +27,4 @@ function wpdocs_dequeue_script() {
 
   }
 }
-add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
+//add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
