@@ -3,6 +3,29 @@ input#menu-search.basileia-search {
   padding: 2px 0px 2px 9px;
   max-width: 99%; }
 
+.basileia-book-store .basileia-featured-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #2b3e5e;
+  display: flex;
+  justify-content: flex-end; }
+  .basileia-book-store .basileia-featured-bg img {
+    height: 378px;
+    float: none;
+    margin: 20px; }
+.basileia-book-store .beside-slider-desc {
+  opacity: 1;
+  visibility: visible; }
+  .basileia-book-store .beside-slider-desc .slider-details {
+    max-height: 119px;
+    overflow: hidden; }
+.basileia-book-store .basileia-featured-bg.side-basileia img {
+  width: auto;
+  height: 163px; }
+.basileia-book-store .beside-slider-content-wrapper {
+  text-align: left;
+  padding: 1em; }
+
 .woocommerce.right-sidebar div#primary, body.right-sidebar div#primary {
   width: 74%; }
 .woocommerce .wrapper.site-content .letra-autor, body .wrapper.site-content .letra-autor {
@@ -14,28 +37,6 @@ input#menu-search.basileia-search {
     .woocommerce .wrapper.site-content .letra-autor .Letter ul, body .wrapper.site-content .letra-autor .Letter ul {
       list-style: none;
       padding: 0; }
-.woocommerce #content .basileia-featured-bg, body #content .basileia-featured-bg {
-  width: 100%;
-  height: 100%;
-  background-color: #2b3e5e;
-  display: flex;
-  justify-content: flex-end; }
-  .woocommerce #content .basileia-featured-bg img, body #content .basileia-featured-bg img {
-    height: 378px;
-    float: none;
-    margin: 20px; }
-.woocommerce #content .beside-slider-desc, body #content .beside-slider-desc {
-  opacity: 1;
-  visibility: visible; }
-  .woocommerce #content .beside-slider-desc .slider-details, body #content .beside-slider-desc .slider-details {
-    max-height: 119px;
-    overflow: hidden; }
-.woocommerce #content .basileia-featured-bg.side-basileia img, body #content .basileia-featured-bg.side-basileia img {
-  width: auto;
-  height: 163px; }
-.woocommerce #content .beside-slider-content-wrapper, body #content .beside-slider-content-wrapper {
-  text-align: left;
-  padding: 1em; }
 .woocommerce #content div.product div.woocommerce-product-gallery.images, body #content div.product div.woocommerce-product-gallery.images {
   width: 33%;
   float: left; }
