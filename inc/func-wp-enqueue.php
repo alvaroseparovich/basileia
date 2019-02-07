@@ -3,7 +3,7 @@
 function basileia_enqueue_styles_scripts() {
  
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'child-style', get_stylesheet_directory_uri().'/style-sheet.css' );
+  wp_enqueue_style( 'child-style', get_stylesheet_directory_uri().'/style-sheet.css' ,'','1.0.0');
   
 
   //Registering scripts
