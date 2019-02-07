@@ -1,0 +1,37 @@
+
+$banner-principal-h: 100vw!important;
+
+@media (max-width: 768px){
+    body .mobile-only {
+        display: none;
+    }
+}
+
+@media (max-width: 640px){
+    .slider-feature-wrap.clearfix.basileia-book-store{
+        .slider-section{
+            height: $banner-principal-h;
+            .slick-initialized.slick-slider{
+                height: $banner-principal-h;
+                .slick-list.draggable{
+                    height: $banner-principal-h;
+                    .slick-track{
+                        height: $banner-principal-h;
+                        .slick-slide{
+                            height: $banner-principal-h;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .basileia-featured-bg {
+            img{
+                width: auto;
+                height: 85vw;
+                margin: 8vw auto;
+            }
+
+        }
+    }
+}

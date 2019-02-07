@@ -210,5 +210,23 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media (min-width: 768px) {
   body .mobile-only {
     display: none; } }
+@media (max-width: 768px) {
+  body .mobile-only {
+    display: none; } }
+@media (max-width: 640px) {
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-section {
+    height: 100vw !important; }
+    .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider {
+      height: 100vw !important; }
+      .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable {
+        height: 100vw !important; }
+        .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track {
+          height: 100vw !important; }
+          .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track .slick-slide {
+            height: 100vw !important; }
+  .slider-feature-wrap.clearfix.basileia-book-store .basileia-featured-bg img {
+    width: auto;
+    height: 85vw;
+    margin: 8vw auto; } }
 
 /*# sourceMappingURL=style-sheet.css.map */

@@ -349,8 +349,11 @@ body #content {
 //-------------------------
 //-------------------------
 //-------------------------
+
 @media (min-width: 768px){
     body .mobile-only {
         display: none;
     }
 }
+
+@import 'mobile-max-768px.scss';

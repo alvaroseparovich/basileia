@@ -1,5 +1,7 @@
 <?php
-
+/*-----------------------------
+This widget is a example to Show authors 
+-----------------------------*/
 
 class attribute_feature_right extends WP_Widget {
 	function __construct() {
