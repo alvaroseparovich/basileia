@@ -3,8 +3,6 @@
 //Functions to remove or add css and scripts 
 require_once get_stylesheet_directory() . '/inc/func-wp-enqueue.php';
 
-//wp_enqueue_script( 'default-basileia-js', get_stylesheet_directory_uri().'/inc/js/default-basileia.js' );
-
 //Functions to custom product page
 require_once get_stylesheet_directory() . '/inc/func-product-page.php';
 

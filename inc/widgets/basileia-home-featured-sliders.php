@@ -16,7 +16,8 @@
 function online_shop_fs_image_display_options() {
     $online_shop_fs_image_display_options =  array(
         'full-screen-bg' => esc_html__( 'Full Screen Background', 'online-shop' ),
-        'responsive-img' => esc_html__( 'Responsive Image', 'online-shop' )
+        'responsive-img' => esc_html__( 'Responsive Image', 'online-shop' ),
+        'basileia-book-store' => esc_html__( 'Display as Basileia Book-store', 'Basileia' )
     );
     return apply_filters( 'online_shop_fs_image_display_options', $online_shop_fs_image_display_options );
 }
@@ -118,6 +119,7 @@ function online_shop_feature_slider() {
                         $slider_query = new WP_Query( $query_args );
 
                         if ( $slider_query->have_posts() ):
+                            $counti = 1;
                             while ($slider_query->have_posts()): $slider_query->the_post();
                                 if (has_post_thumbnail()) {
                                     $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
@@ -129,11 +131,19 @@ function online_shop_feature_slider() {
                                 if( 'full-screen-bg' == $online_shop_fs_image_display_options ){
                                     $bg_image_style = 'background-image:url(' . esc_url( $image_url[0] ) . ');background-repeat:no-repeat;background-size:cover;background-position:center;';
                                 }
+                                $basileia_book_store = 0;
+                                if( 'basileia-book-store' == $online_shop_fs_image_display_options ){
+                                    $basileia_book_store = true;
+                                }
+
                                 ?>
                                 <div class="no-media-query at-slide-unit acme-col-1" style="<?php echo esc_attr( $bg_image_style ); ?>">
                                     <?php
                                     if( 'responsive-img' == $online_shop_fs_image_display_options ){
                                         echo '<img src="'.esc_url( $image_url[0] ).'"/>';
+                                    }elseif ($basileia_book_store) {
+                                        echo '<div id="bg-basileia-' . $counti . '" class="basileia-featured-bg"><img src="'.esc_url( $image_url[0] ).'"/></div>';
+                                        $counti = $counti + 1;
                                     }
                                     ?>
                                     <a class="at-overlay" href="<?php the_permalink()?>"></a>
@@ -275,12 +285,20 @@ function online_shop_feature_slider() {
                             if( 'full-screen-bg' == $online_shop_fs_right_image_display_options ){
                                 $bg_image_style = 'background-image:url(' . esc_url( $image_url[0] ) . ');background-repeat:no-repeat;background-size:cover;background-position:center;';
                             }
+                            $basileia_book_store = '';
+                                if( 'basileia-book-store' == $online_shop_fs_image_display_options ){
+                                    $basileia_book_store = true;
+                                }
                             ?>
                             <div class="no-media-query at-beside-slider-unit" style="<?php echo esc_attr( $bg_image_style ); ?>">
                                 <?php
                                 if( 'responsive-img' == $online_shop_fs_right_image_display_options ){
                                     echo '<img src="'.esc_url( $image_url[0] ).'"/>';
+                                }elseif ($basileia_book_store) {
+                                    echo '<div class="basileia-featured-bg side-basileia"><img src="'.esc_url( $image_url[0] ).'"/></div>';
+                                    $counti = $counti + 1;
                                 }
+
                                 ?>
                                 <a class="at-overlay" href="<?php the_permalink()?>"></a>
                                 <div class="beside-slider-desc">

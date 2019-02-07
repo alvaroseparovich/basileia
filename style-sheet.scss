@@ -34,6 +34,42 @@ $color-2: #2b3e5e;
     }
     #content {
         //=========================
+        //-----Featured section----
+        //=========================
+
+        .basileia-featured-bg {
+                width: 100%;
+                height: 100%;
+                background-color: $color-2;
+                display: flex;
+                justify-content: flex-end;
+            
+            img {
+                height: 378px;
+                float: none;
+                margin: 20px;
+            }
+        }
+        .beside-slider-desc{
+            .slider-details {
+                max-height: 119px;
+                overflow: hidden;
+            }
+            opacity: 1;
+            visibility: visible;
+        }
+        .basileia-featured-bg.side-basileia{
+            
+            img{
+                width: auto;
+                height: 163px;
+            }
+        } 
+        .beside-slider-content-wrapper {
+            text-align: left;
+            padding: 1em;
+        }
+        //=========================
         //-------Product Page------
         //=========================
         div.product{
@@ -234,7 +270,7 @@ $color-2: #2b3e5e;
         //===============================
         //-----------Loop itens----------
         //===============================
-        ul.products.columns-4 li.product{
+        ul.products li.product{
 
             span.onsale {
                 display: none;

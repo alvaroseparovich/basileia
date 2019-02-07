@@ -9,6 +9,28 @@
     .woocommerce .wrapper.site-content .letra-autor .Letter ul, .woocommerce-page .wrapper.site-content .letra-autor .Letter ul {
       list-style: none;
       padding: 0; }
+.woocommerce #content .basileia-featured-bg, .woocommerce-page #content .basileia-featured-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #2b3e5e;
+  display: flex;
+  justify-content: flex-end; }
+  .woocommerce #content .basileia-featured-bg img, .woocommerce-page #content .basileia-featured-bg img {
+    height: 378px;
+    float: none;
+    margin: 20px; }
+.woocommerce #content .beside-slider-desc, .woocommerce-page #content .beside-slider-desc {
+  opacity: 1;
+  visibility: visible; }
+  .woocommerce #content .beside-slider-desc .slider-details, .woocommerce-page #content .beside-slider-desc .slider-details {
+    max-height: 119px;
+    overflow: hidden; }
+.woocommerce #content .basileia-featured-bg.side-basileia img, .woocommerce-page #content .basileia-featured-bg.side-basileia img {
+  width: auto;
+  height: 163px; }
+.woocommerce #content .beside-slider-content-wrapper, .woocommerce-page #content .beside-slider-content-wrapper {
+  text-align: left;
+  padding: 1em; }
 .woocommerce #content div.product div.woocommerce-product-gallery.images, .woocommerce-page #content div.product div.woocommerce-product-gallery.images {
   width: 33%;
   float: left; }
@@ -140,14 +162,14 @@
   margin-bottom: 5em; }
 .woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs, .woocommerce-page #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
   display: none; }
-.woocommerce #content ul.products.columns-4 li.product span.onsale, .woocommerce-page #content ul.products.columns-4 li.product span.onsale {
+.woocommerce #content ul.products li.product span.onsale, .woocommerce-page #content ul.products li.product span.onsale {
   display: none; }
-.woocommerce #content ul.products.columns-4 li.product .star-rating, .woocommerce-page #content ul.products.columns-4 li.product .star-rating {
+.woocommerce #content ul.products li.product .star-rating, .woocommerce-page #content ul.products li.product .star-rating {
   order: -1;
   position: absolute; }
-.woocommerce #content ul.products.columns-4 li.product del, .woocommerce-page #content ul.products.columns-4 li.product del {
+.woocommerce #content ul.products li.product del, .woocommerce-page #content ul.products li.product del {
   font-size: 0.8em; }
-.woocommerce #content ul.products.columns-4 li.product ins, .woocommerce #content ul.products.columns-4 li.product del, .woocommerce-page #content ul.products.columns-4 li.product ins, .woocommerce-page #content ul.products.columns-4 li.product del {
+.woocommerce #content ul.products li.product ins, .woocommerce #content ul.products li.product del, .woocommerce-page #content ul.products li.product ins, .woocommerce-page #content ul.products li.product del {
   display: block; }
 
 .special-menu {
