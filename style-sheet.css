@@ -1,3 +1,8 @@
+input#menu-search.basileia-search {
+  height: 24px;
+  padding: 2px 0px 2px 9px;
+  max-width: 99%; }
+
 .woocommerce.right-sidebar div#primary, .woocommerce-page.right-sidebar div#primary {
   width: 74%; }
 .woocommerce .wrapper.site-content .letra-autor, .woocommerce-page .wrapper.site-content .letra-autor {
