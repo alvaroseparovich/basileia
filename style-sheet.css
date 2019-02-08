@@ -214,6 +214,9 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   body .mobile-only {
     display: none; } }
 @media (max-width: 640px) {
+  /*===============================================
+  -----------------Home Page Featured---------------
+  /*===============================================*/
   .slider-feature-wrap.clearfix.basileia-book-store .slider-section {
     height: 100vw !important; }
     .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider {
@@ -227,6 +230,35 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   .slider-feature-wrap.clearfix.basileia-book-store .basileia-featured-bg img {
     width: auto;
     height: 85vw;
-    margin: 8vw auto; } }
+    margin: 8vw auto; }
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-desc {
+    bottom: 8%;
+    padding-left: 0 !important;
+    margin: 0 0 0 32%; }
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-details {
+    display: none; }
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-buttons {
+    display: block; }
+
+  .beside-slider.basileia-book-store {
+    height: 101vw !important; }
+    .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical {
+      height: 101vw !important; }
+      .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable {
+        height: 101vw !important; }
+        .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide {
+          height: 50vw !important; }
+          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide img {
+            height: 45vw;
+            margin: 2vw 5vw; }
+          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slider-details, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .beside-slider-desc {
+            display: block; }
+          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
+            font-size: 1.2em;
+            width: 50vw; } }
+@media (max-width: 370px) {
+  .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
+    font-size: 0.9em;
+    /*display: none;*/ } }
 
 /*# sourceMappingURL=style-sheet.css.map */

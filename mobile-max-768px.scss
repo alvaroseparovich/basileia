@@ -1,5 +1,7 @@
 
 $banner-principal-h: 100vw!important;
+$banner-side-h: 50vw!important;
+$banner-side-hf: 101vw!important;
 
 @media (max-width: 768px){
     body .mobile-only {
@@ -8,6 +10,10 @@ $banner-principal-h: 100vw!important;
 }
 
 @media (max-width: 640px){
+
+    /*===============================================
+    -----------------Home Page Featured---------------
+    /*===============================================*/
     .slider-feature-wrap.clearfix.basileia-book-store{
         .slider-section{
             height: $banner-principal-h;
@@ -31,7 +37,54 @@ $banner-principal-h: 100vw!important;
                 height: 85vw;
                 margin: 8vw auto;
             }
-
+            
+        }
+        .slider-desc {
+            bottom: 8%;
+            padding-left: 0!important;
+            margin: 0 0 0 32%;
+        }
+        .slider-details{
+            display: none;
+        }
+        .slider-buttons {
+            display: block;
         }
     }
+    
+    .beside-slider.basileia-book-store{
+        height: $banner-side-hf;
+        .fs-right-slider.slick-initialized.slick-slider.slick-vertical{
+            height: $banner-side-hf;
+            .slick-list.draggable{
+                height: $banner-side-hf;
+                
+                .no-media-query.at-beside-slider-unit.slick-slide{
+                    height: $banner-side-h;
+                    img{
+                        height: 45vw;
+                        margin: 2vw 5vw;
+                    }
+                    .slider-details,.beside-slider-desc{
+                        display: block;
+                    }
+                    .slide-title {
+                        font-size: 1.2em;
+                        width: 50vw;
+                    }
+                    
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 370px){
+    .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
+        font-size: 0.9em;
+        /*display: none;*/
+    }
+
 }
