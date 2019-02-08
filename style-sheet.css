@@ -210,9 +210,18 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media (min-width: 768px) {
   body .mobile-only {
     display: none; } }
+@media (max-width: 992px) {
+  /*===============================================
+  -----------------Home Page Featured---------------
+  /*===============================================*/
+  .page-template-template-homepage .featured-entries-col .single-list.slick-slide .loop-img {
+    height: 35vw !important; } }
 @media (max-width: 768px) {
   body .mobile-only {
-    display: none; } }
+    display: none; }
+
+  .page-template-template-homepage .featured-entries-col .single-list .loop-img {
+    height: 40vw !important; } }
 @media (max-width: 640px) {
   /*===============================================
   -----------------Home Page Featured---------------
@@ -231,14 +240,18 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     width: auto;
     height: 85vw;
     margin: 8vw auto; }
-  .slider-feature-wrap.clearfix.basileia-book-store .slider-desc {
-    bottom: 8%;
-    padding-left: 0 !important;
-    margin: 0 0 0 32%; }
   .slider-feature-wrap.clearfix.basileia-book-store .slider-details {
     display: none; }
   .slider-feature-wrap.clearfix.basileia-book-store .slider-buttons {
     display: block; }
+  .slider-feature-wrap.clearfix.basileia-book-store .featured-slider.at-feature-section .slider-desc {
+    bottom: 8%;
+    width: 100%;
+    padding-left: 0 !important; }
+  .slider-feature-wrap.clearfix.basileia-book-store .featured-slider.at-feature-section .slider-buttons {
+    display: block;
+    margin: 0 auto;
+    width: max-content; }
 
   .beside-slider.basileia-book-store {
     height: 101vw !important; }
@@ -255,7 +268,13 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
             display: block; }
           .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
             font-size: 1.2em;
-            width: 50vw; } }
+            width: 50vw; }
+
+  /*===============================================
+  ---------------------Home Page-------------------
+  /*===============================================*/
+  .page-template-template-homepage .featured-entries-col .single-list.slick-slide .loop-img {
+    height: 48vw !important; } }
 @media (max-width: 370px) {
   .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
     font-size: 0.9em;
