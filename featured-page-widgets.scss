@@ -1,0 +1,45 @@
+
+.woocommerce #content ,body #content{
+
+    .featured-entries-col ul.products li.product {
+        
+        width: 100%;
+        
+        @media (max-width:1229px){
+            .loop-img {
+                height: 18.5vw;
+                max-height: 227px;
+}
+        }
+        @media (max-width:767px){}
+        @media (max-width:500px){
+            
+            width: 100%;
+            
+            div.loop-img{
+                height: 60vw;
+                max-height: 280px;
+            }
+        }
+        @media (max-width:398px){}
+    }
+
+    //When has a Category IMG ========================================================
+    .at-cat-block ~ .featured-entries-col{
+        .loop-img{
+            width: 98%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .acme-col-4, .acme-col-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width:1229px){}
+@media (max-width:767px){}
+@media (max-width:500px){}
+@media (max-width:398px){}

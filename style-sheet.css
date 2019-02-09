@@ -90,24 +90,6 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     .woocommerce #content .group-sumary .price ins, body #content .group-sumary .price ins {
       font-size: 2em;
       text-decoration: none; }
-.woocommerce #content ul.products li.product, body #content ul.products li.product {
-  margin: 0 1% 2.992em 0;
-  width: 24%;
-  /* a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-       height: auto;
-       width: auto;
-       max-width: 200px;
-       max-height: 270px;
-       margin: 0 0 1em !important;
-       display: inline;
-  }*/ }
-  .woocommerce #content ul.products li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link, body #content ul.products li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: unset; }
-  .woocommerce #content ul.products li.product h3.woocommerce-loop-product__title, body #content ul.products li.product h3.woocommerce-loop-product__title {
-    min-height: 3em; }
 .woocommerce input#menu-search.basileia-search, body input#menu-search.basileia-search {
   height: 24px;
   padding: 2px 0px 2px 9px;
@@ -193,15 +175,6 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   margin-bottom: 5em; }
 .woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs, body #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
   display: none; }
-.woocommerce #content ul.products li.product span.onsale, body #content ul.products li.product span.onsale {
-  display: none; }
-.woocommerce #content ul.products li.product .star-rating, body #content ul.products li.product .star-rating {
-  order: -1;
-  position: absolute; }
-.woocommerce #content ul.products li.product del, body #content ul.products li.product del {
-  font-size: 0.8em; }
-.woocommerce #content ul.products li.product ins, .woocommerce #content ul.products li.product del, body #content ul.products li.product ins, body #content ul.products li.product del {
-  display: block; }
 
 .special-menu {
   background: #2b3e5e;
@@ -222,7 +195,7 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     display: none; }
 
   .page-template-template-homepage .featured-entries-col .single-list .loop-img {
-    height: 40vw !important; } }
+    height: 40vw; } }
 @media (max-width: 640px) {
   /*===============================================
   -----------------Home Page Featured---------------
@@ -280,20 +253,42 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
     font-size: 0.9em;
     /*display: none;*/ } }
+/**
+*   This document stylise Product Loop Pages
+*/
 .woocommerce #content ul.products, body #content ul.products {
   display: flex;
   flex-wrap: wrap; }
-.woocommerce #content li.product .loop-img, body #content li.product .loop-img {
-  height: 30vw;
-  width: 89%;
-  max-height: 300px; }
-.woocommerce #content li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail, body #content li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 270px;
-  margin: 0 0 1em !important;
-  display: inline; }
+.woocommerce #content li.product, body #content li.product {
+  margin: 0 1% 2.992em 0;
+  width: 24%; }
+  .woocommerce #content li.product span.onsale, body #content li.product span.onsale {
+    display: none; }
+  .woocommerce #content li.product .star-rating, body #content li.product .star-rating {
+    order: -1;
+    position: absolute; }
+  .woocommerce #content li.product del, body #content li.product del {
+    font-size: 0.8em; }
+  .woocommerce #content li.product ins, .woocommerce #content li.product del, body #content li.product ins, body #content li.product del {
+    display: block; }
+  .woocommerce #content li.product .loop-img, body #content li.product .loop-img {
+    height: 30vw;
+    width: 89%;
+    max-height: 300px; }
+  .woocommerce #content li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail, body #content li.product a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 270px;
+    margin: 0 0 1em !important;
+    display: inline; }
+  .woocommerce #content li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link, body #content li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset; }
+  .woocommerce #content li.product h3.woocommerce-loop-product__title, body #content li.product h3.woocommerce-loop-product__title {
+    min-height: 3em; }
 @media (max-width: 1229px) {
   .woocommerce #content li.product .loop-img, body #content li.product .loop-img {
     height: 23vw;
@@ -315,5 +310,24 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     .woocommerce #content ul.products li.product .loop-img, body #content ul.products li.product .loop-img {
       height: 62vw;
       max-height: 246px; } }
+
+.woocommerce #content .featured-entries-col ul.products li.product, body #content .featured-entries-col ul.products li.product {
+  width: 100%; }
+  @media (max-width: 1229px) {
+    .woocommerce #content .featured-entries-col ul.products li.product .loop-img, body #content .featured-entries-col ul.products li.product .loop-img {
+      height: 18.5vw;
+      max-height: 227px; } }
+  @media (max-width: 500px) {
+    .woocommerce #content .featured-entries-col ul.products li.product, body #content .featured-entries-col ul.products li.product {
+      width: 100%; }
+      .woocommerce #content .featured-entries-col ul.products li.product div.loop-img, body #content .featured-entries-col ul.products li.product div.loop-img {
+        height: 60vw;
+        max-height: 280px; } }
+.woocommerce #content .at-cat-block ~ .featured-entries-col .loop-img, body #content .at-cat-block ~ .featured-entries-col .loop-img {
+  width: 98%; }
+
+@media screen and (max-width: 480px) {
+  .acme-col-4, .acme-col-3 {
+    width: 50%; } }
 
 /*# sourceMappingURL=style-sheet.css.map */

@@ -1,22 +1,49 @@
+/**
+*   This document stylise Product Loop Pages
+*/
+
 .woocommerce #content ,body #content{
-
+    
     ul.products{
-
+        
         display: flex;
         flex-wrap: wrap;
     }
     
     li.product {
-
+        margin: 0 1% 2.992em 0;
+        width: 24%;
+        
+        span.onsale {
+        
+            display: none;
+        }
+        
+        .star-rating {
+        
+            order: -1;
+            position: absolute;
+        }
+        
+        del {
+        
+            font-size: 0.8em;
+        }
+        
+        ins,del{
+        
+            display: block;
+        }
+        
         .loop-img{
-
+            
             height: 30vw;
             width: 89%;
             max-height: 300px;
         }
-
+        
         a img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-
+            
             height: auto;
             width: auto;
             max-width: 100%;
@@ -24,19 +51,28 @@
             margin: 0 0 1em !important;
             display: inline;
         }
+        a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: unset;
+        }
+        h3.woocommerce-loop-product__title {
+            min-height: 3em;
+        }
     }
+
     @media (max-width:1229px){
-
+        
         li.product {
-
+            
             .loop-img{
-
+                
                 height: 23vw;
                 max-height: 227px;
             }
         }
     }
-    
     @media (max-width:767px){    
 
         li.product {
