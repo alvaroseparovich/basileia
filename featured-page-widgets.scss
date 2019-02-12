@@ -4,12 +4,18 @@
     .featured-entries-col ul.products li.product {
         
         width: 100%;
-        
+        img.attachment-shop_catalog.size-shop_catalog {
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            margin:0 auto;
+        }
         @media (max-width:1229px){
             .loop-img {
-                height: 18.5vw;
-                max-height: 227px;
-}
+                height: 27.5vw;
+                max-height: 185px;
+            }
         }
         @media (max-width:767px){}
         @media (max-width:500px){
@@ -17,8 +23,8 @@
             width: 100%;
             
             div.loop-img{
-                height: 60vw;
-                max-height: 280px;
+                height: 52.7vw;
+                max-height: 157px;
             }
         }
         @media (max-width:398px){}
@@ -27,7 +33,7 @@
     //When has a Category IMG ========================================================
     .at-cat-block ~ .featured-entries-col{
         .loop-img{
-            width: 98%;
+            
         }
     }
     

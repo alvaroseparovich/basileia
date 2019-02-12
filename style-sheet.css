@@ -94,6 +94,8 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   height: 24px;
   padding: 2px 0px 2px 9px;
   max-width: 99%; }
+.woocommerce #content .cat-links, body #content .cat-links {
+  display: none !important; }
 .woocommerce #content ins, body #content ins {
   text-decoration: none; }
 .woocommerce #content div.product .summary.entry-summary, body #content div.product .summary.entry-summary {
@@ -184,18 +186,40 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media (min-width: 768px) {
   body .mobile-only {
     display: none; } }
-@media (max-width: 992px) {
-  /*===============================================
-  -----------------Home Page Featured---------------
-  /*===============================================*/
-  .page-template-template-homepage .featured-entries-col .single-list.slick-slide .loop-img {
-    height: 35vw !important; } }
+/*@media (max-width: 992px){
+    /*===============================================
+    -----------------Home Page Featured---------------
+    /*===============================================*/
+    /*.page-template-template-homepage{
+        .featured-entries-col{
+            .single-list.slick-slide{
+                .loop-img{
+                    height: 35vw!important;
+                }
+            }
+        }
+    }
+}*/
 @media (max-width: 768px) {
   body .mobile-only {
     display: none; }
 
   .page-template-template-homepage .featured-entries-col .single-list .loop-img {
     height: 40vw; } }
+@media (max-width: 768px) {
+  /*===============================================
+      -----------------Home Page Featured---------------
+      /*===============================================*/
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-section {
+    height: 54vw !important; }
+    .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider {
+      height: 54vw !important; }
+      .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable {
+        height: 54vw !important; }
+        .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track {
+          height: 54vw !important; }
+          .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track .slick-slide {
+            height: 54vw !important; } }
 @media (max-width: 640px) {
   /*===============================================
   -----------------Home Page Featured---------------
@@ -313,18 +337,22 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 
 .woocommerce #content .featured-entries-col ul.products li.product, body #content .featured-entries-col ul.products li.product {
   width: 100%; }
+  .woocommerce #content .featured-entries-col ul.products li.product img.attachment-shop_catalog.size-shop_catalog, body #content .featured-entries-col ul.products li.product img.attachment-shop_catalog.size-shop_catalog {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto; }
   @media (max-width: 1229px) {
     .woocommerce #content .featured-entries-col ul.products li.product .loop-img, body #content .featured-entries-col ul.products li.product .loop-img {
-      height: 18.5vw;
-      max-height: 227px; } }
+      height: 27.5vw;
+      max-height: 185px; } }
   @media (max-width: 500px) {
     .woocommerce #content .featured-entries-col ul.products li.product, body #content .featured-entries-col ul.products li.product {
       width: 100%; }
       .woocommerce #content .featured-entries-col ul.products li.product div.loop-img, body #content .featured-entries-col ul.products li.product div.loop-img {
-        height: 60vw;
-        max-height: 280px; } }
-.woocommerce #content .at-cat-block ~ .featured-entries-col .loop-img, body #content .at-cat-block ~ .featured-entries-col .loop-img {
-  width: 98%; }
+        height: 52.7vw;
+        max-height: 157px; } }
 
 @media screen and (max-width: 480px) {
   .acme-col-4, .acme-col-3 {

@@ -3,11 +3,15 @@ $banner-principal-h: 100vw!important;
 $banner-side-h: 50vw!important;
 $banner-side-hf: 101vw!important;
 
-@media (max-width: 992px){
+$banner-principal-h-767: 54vw!important;
+$banner-side-h-767: 50vw!important;
+$banner-side-hf-767: 101vw!important;
+
+/*@media (max-width: 992px){
     /*===============================================
     -----------------Home Page Featured---------------
     /*===============================================*/
-    .page-template-template-homepage{
+    /*.page-template-template-homepage{
         .featured-entries-col{
             .single-list.slick-slide{
                 .loop-img{
@@ -16,7 +20,7 @@ $banner-side-hf: 101vw!important;
             }
         }
     }
-}
+}*/
 @media (max-width: 768px){
     body .mobile-only {
         display: none;
@@ -27,6 +31,32 @@ $banner-side-hf: 101vw!important;
             .single-list{
                 .loop-img{
                     height:40vw;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px){
+/*===============================================
+    -----------------Home Page Featured---------------
+    /*===============================================*/
+    .slider-feature-wrap.clearfix.basileia-book-store{
+        .slider-section{
+            height: $banner-principal-h-767;
+            .slick-initialized.slick-slider{
+                height: $banner-principal-h-767;
+                .slick-list.draggable{
+                    height: $banner-principal-h-767;
+                    .slick-track{
+                        height: $banner-principal-h-767;
+                        .slick-slide{
+                            height: $banner-principal-h-767;
+                        }
+                    }
+                    
                 }
             }
         }
