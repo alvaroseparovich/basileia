@@ -206,7 +206,7 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 
   .page-template-template-homepage .featured-entries-col .single-list .loop-img {
     height: 40vw; } }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 641px) {
   /*===============================================
       -----------------Home Page Featured---------------
       /*===============================================*/
@@ -219,7 +219,26 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
         .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track {
           height: 54vw !important; }
           .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track .slick-slide {
-            height: 54vw !important; } }
+            height: 54vw !important; }
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-details {
+    display: none; }
+  .slider-feature-wrap.clearfix.basileia-book-store .slider-buttons {
+    display: block;
+    margin: 0 auto;
+    width: max-content; }
+
+  .beside-slider .fs-right-slider .at-beside-slider-unit {
+    height: 26.6vw; }
+
+  .basileia-book-store .basileia-featured-bg.side-basileia img {
+    width: auto;
+    height: 21.4vw;
+    margin-left: auto;
+    margin-right: auto; }
+  .basileia-book-store .basileia-featured-bg img {
+    height: 48vw;
+    float: none;
+    margin: auto; } }
 @media (max-width: 640px) {
   /*===============================================
   -----------------Home Page Featured---------------
