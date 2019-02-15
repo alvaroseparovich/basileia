@@ -138,6 +138,7 @@ function online_shop_feature_slider() {
 
                                 ?>
                                 <div class="no-media-query at-slide-unit acme-col-1" style="<?php echo esc_attr( $bg_image_style ); ?>">
+                                <a class="at-overlay" href="<?php the_permalink()?>">
                                     <?php
                                     if( 'responsive-img' == $online_shop_fs_image_display_options ){
                                         echo '<img src="'.esc_url( $image_url[0] ).'"/>';
@@ -145,7 +146,7 @@ function online_shop_feature_slider() {
                                         echo '<div id="bg-basileia-' . $counti . '" class="basileia-featured-bg"><img src="'.esc_url( $image_url[0] ).'"/></div>';
                                         $counti = $counti + 1;
                                     }
-                                    ?>
+                                    ?></a>
                                     <a class="at-overlay" href="<?php the_permalink()?>"></a>
                                     <div class="slider-desc">
                                         <?php
@@ -291,6 +292,7 @@ function online_shop_feature_slider() {
                                 }
                             ?>
                             <div class="no-media-query at-beside-slider-unit" style="<?php echo esc_attr( $bg_image_style ); ?>">
+                            <a class="at-overlay" href="<?php the_permalink()?>">
                                 <?php
                                 if( 'responsive-img' == $online_shop_fs_right_image_display_options ){
                                     echo '<img src="'.esc_url( $image_url[0] ).'"/>';
@@ -299,7 +301,7 @@ function online_shop_feature_slider() {
                                     $counti = $counti + 1;
                                 }
 
-                                ?>
+                                ?></a>
                                 <a class="at-overlay" href="<?php the_permalink()?>"></a>
                                 <div class="beside-slider-desc">
                                     <div class="beside-slider-content-wrapper">
