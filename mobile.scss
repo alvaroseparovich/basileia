@@ -185,6 +185,23 @@ $banner-side-hf-767: 101vw!important;
         }
        
     }
+    /*===============================================
+    ----------------Product Single page--------------
+    /*===============================================*/
+    .woocommerce #content, body #content{
+
+        div.product div.woocommerce-product-gallery.images, div.product div.woocommerce-product-gallery.images {
+            width: 60%;
+            float: none;
+            margin: 0 auto;
+        }
+        .type-product div.summary.entry-summary{
+            width: 100%;
+        }
+        #primary span.onsale {
+            margin: 0 30vw !IMPORTANT;
+        }
+    }
 }
 
 @media (max-width: 370px){
@@ -192,5 +209,12 @@ $banner-side-hf-767: 101vw!important;
         font-size: 0.9em;
         /*display: none;*/
     }
-
+    .woocommerce #content .group-sumary,body #content .group-sumary {
+        .price,.group,.product_meta,.woocommerce-product-book-details-seo{
+            width: 100%;            
+        }
+        .input-text.qty.text{
+            width: 30vw;
+        }
+    }
 }

@@ -411,11 +411,33 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   .page-template-template-homepage .featured-entries-col .single-list.slick-slide .loop-img {
     height: 48vw !important;
   }
+
+  /*===============================================
+  ----------------Product Single page--------------
+  /*===============================================*/
+  .woocommerce #content div.product div.woocommerce-product-gallery.images, .woocommerce #content div.product div.woocommerce-product-gallery.images, body #content div.product div.woocommerce-product-gallery.images, body #content div.product div.woocommerce-product-gallery.images {
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+  }
+  .woocommerce #content .type-product div.summary.entry-summary, body #content .type-product div.summary.entry-summary {
+    width: 100%;
+  }
+  .woocommerce #content #primary span.onsale, body #content #primary span.onsale {
+    margin: 0 30vw !important;
+  }
 }
 @media (max-width: 370px) {
   .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
     font-size: 0.9em;
     /*display: none;*/
+  }
+
+  .woocommerce #content .group-sumary .price, .woocommerce #content .group-sumary .group, .woocommerce #content .group-sumary .product_meta, .woocommerce #content .group-sumary .woocommerce-product-book-details-seo, body #content .group-sumary .price, body #content .group-sumary .group, body #content .group-sumary .product_meta, body #content .group-sumary .woocommerce-product-book-details-seo {
+    width: 100%;
+  }
+  .woocommerce #content .group-sumary .input-text.qty.text, body #content .group-sumary .input-text.qty.text {
+    width: 30vw;
   }
 }
 /**
