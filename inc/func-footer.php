@@ -132,7 +132,7 @@ function online_shop_footer() {
                                 <?php echo wp_kses_post( $online_shop_customizer_all_values['online-shop-footer-copyright'] ); ?>
                             <?php endif; ?>
                         </span>
-                            <span>CNPJ: -----------------</span><!-- .site-info -->
+                        <!-- .site-info -->
                     </div><!-- .site-info -->
                 </div>
                 <div class="clearfix"></div>
