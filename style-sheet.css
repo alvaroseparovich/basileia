@@ -396,5 +396,56 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media screen and (max-width: 480px) {
   .acme-col-4, .acme-col-3 {
     width: 50%; } }
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap; }
+  .footer-columns .footer-sidebar.footer-sidebar {
+    width: 24%; }
+    @media (max-width: 800px) {
+      .footer-columns .footer-sidebar.footer-sidebar {
+        width: 49%; } }
+    @media (max-width: 400px) {
+      .footer-columns .footer-sidebar.footer-sidebar {
+        width: 100%; } }
+
+@media (max-width: 1229px) {
+  .site-header .center-wrapper-mx-width {
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between; }
+    .site-header .center-wrapper-mx-width .header-ads-adv-search {
+      max-width: 100%;
+      width: 65%; }
+    .site-header .center-wrapper-mx-width .widget.widget_basileia_product_search {
+      margin: 3px 0; }
+    .site-header .center-wrapper-mx-width .cart-section {
+      order: 2; }
+
+  .site-logo > a {
+    margin: 0;
+    padding: 0; }
+
+  .header-wrapper {
+    padding: 3px 0 20px; }
+
+  .header-left {
+    width: fit-content; }
+
+  .top-header-wrapper > .wrapper {
+    display: flex;
+    justify-content: space-between; } }
+@media (max-width: 767px) {
+  .site-header .header-left {
+    display: none; }
+  .site-header .header-right {
+    margin: auto; }
+  .site-header .yith-wcwl-wrapper, .site-header .wc-cart-wrapper {
+    margin: 0; }
+  .site-header .cart-section {
+    width: 158px; } }
 
 /*# sourceMappingURL=style-sheet.css.map */

@@ -1,0 +1,55 @@
+@media (max-width: 1229px){
+    .site-header .center-wrapper-mx-width{
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        .header-ads-adv-search{
+            max-width: 100%;
+            width: 65%;
+            
+        }
+        .widget.widget_basileia_product_search{
+            margin: 3px 0;
+        }
+        .cart-section{
+            order: 2;
+        }
+    }
+    .site-logo > a{
+        margin: 0;
+        padding: 0;
+    }
+    .header-wrapper {
+        padding: 3px 0 20px;
+    }
+    .header-left{
+        width: fit-content;
+        
+    }
+    .top-header-wrapper > .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 767px){
+    .site-header {
+        .header-left{
+            display: none;
+        }
+        .header-right{
+            margin: auto;
+        }
+        .yith-wcwl-wrapper, .wc-cart-wrapper{
+            margin: 0;
+        }
+        .cart-section{
+            width: 158px;
+    
+        }
+    }
+
+}

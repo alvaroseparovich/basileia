@@ -1,0 +1,14 @@
+.footer-columns{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .footer-sidebar.footer-sidebar{
+        width: 24%;
+        @media (max-width: 800px){
+            width: 49%;
+        }
+        @media (max-width: 400px){
+            width: 100%;
+        }
+    }
+}
