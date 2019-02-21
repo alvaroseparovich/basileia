@@ -51,5 +51,67 @@
     
         }
     }
+}
 
+@media (max-width: 500px){
+    .header-wrapper > .wrapper {
+        display: flex;
+    }
+    .site-logo{
+        width: fit-content;
+    }
+    .site-header .center-wrapper-mx-width{
+        .cart-section {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            & > div{
+                margin:5px 0;
+            }
+        }   
+        aside.widget.widget_basileia_product_search{
+            margin: 32px 0 32px 5px;
+        }     
+    }
+
+}
+
+@media (max-width: 340px){
+    .header-wrapper > .wrapper {
+        flex-direction: column;
+    }
+    .site-logo{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .site-header .center-wrapper-mx-width{
+        .cart-section {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            & > div{
+                margin:5px 0;
+            }
+        }   
+        aside.widget.widget_basileia_product_search{
+            margin: 32px 0 32px 5px;
+        }     
+    }
+}
+
+@media (max-width: 260px){
+
+    .site-header .center-wrapper-mx-width{
+        flex-direction: column;
+        .cart-section {
+            flex-direction: row;
+            padding: 0;
+            & > div{
+                margin:5px 0;
+            }
+        }   
+        aside.widget.widget_basileia_product_search{
+            margin: 32px 0 32px 5px;
+        }     
+    }
 }
