@@ -2,14 +2,17 @@
 
 // Add term page
 function basileia_add_img_meta_field() {
-	// this will add the custom img field to the add new term page
-	?>
-	<div class="form-field">
-		<label for="term_img"><?php _e( 'Imagem', 'basileia' ); ?></label>
-		<input type="text" name="term_img" id="term_img" value="">
-		<p class="description"><?php _e( 'Adicione uma imagem','basileia' ); ?></p>
-	</div>
-<?php
+    // this will add the custom img field to the add new term page
+    $image = '<img id="attribute-preview-image" src="https://some.default.image.jpg" />';
+
+?>
+    <div class="form-field">
+        <?php     echo $image; ?>
+        <input type="hidden" name="myprefix_image_id" id="myprefix_image_id" value="" class="regular-text" />
+        <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="myprefix_media_manager"/>
+    </div>
+    <?php
+
 }
 add_action( 'pa_editora_add_form_fields', 'basileia_add_img_meta_field', 10, 2 );
 
@@ -21,12 +24,27 @@ function basileia_edit_img_meta_field($term) {
 	$t_id = $term->term_id;
 	
 	// retrieve the existing value(s) for this img field. This returns an array
-	$term_meta = get_option( "taxonomy_$t_id" ); ?>
+    $term_meta = get_option( "taxonomy_$t_id" ); 
+        
+    if( intval( $t_id ) > 0 ) {
+        // Change with the image size you want to use
+        $image = wp_get_attachment_image( $t_id, 'medium', false, array( 'id' => 'attribute-preview-image' ) );
+    } else {
+        // Some default image
+        $image = '<img id="attribute-preview-image" src="https://some.default.image.jpg" />';
+    }
+
+    ?>
+    
+
 	<tr class="form-field">
 	<th scope="row" valign="top"><label for="term_img"><?php _e( 'Imagem', 'basileia' ); ?></label></th>
 		<td>
-			<input type="text" name="term_img" id="term_img" value="<?php echo esc_attr( $term_meta['custom_term_meta'] ) ? esc_attr( $term_meta['custom_term_meta'] ) : ''; ?>">
-			<p class="description"><?php _e( 'Adicione uma imagem','basileia' ); ?></p>
+            <?php echo $image; ?>
+            <input type="hidden" name="myprefix_image_id" id="myprefix_image_id" value="<?php echo esc_attr( $t_id ); ?>" class="regular-text" />
+            <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="myprefix_media_manager"/>
+<br>
+			<p class="description" style="color:darkred;"><?php _e( 'SALVE PARA VER A ALTERAÇÃO DA IMAGEM!','basileia' ); ?></p>
 		</td>
 	</tr>
 <?php

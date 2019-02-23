@@ -44,3 +44,16 @@ function retrieve_var1_replacement( $especial_attribute=0, $all=0 ) {
       }
     }
   }
+
+
+//Add select media to admin=======
+add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
+function load_wp_media_files( $page ) {
+  // change to the $page where you want to enqueue the script
+
+    // Enqueue WordPress media scripts
+    wp_enqueue_media();
+    // Enqueue custom script that will interact with wp.media
+    wp_enqueue_script( 'myprefix_script', get_stylesheet_directory_uri(). '/inc/js/admin-select.js' , array('jquery'), '0.1' );
+
+}
