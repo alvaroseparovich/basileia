@@ -1,0 +1,117 @@
+@media (max-width: 1229px){
+    .site-header .center-wrapper-mx-width{
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        .header-ads-adv-search{
+            max-width: 100%;
+            width: 65%;
+            
+        }
+        .widget.widget_basileia_product_search{
+            margin: 3px 0;
+        }
+        .cart-section{
+            order: 2;
+        }
+    }
+    .site-logo > a{
+        margin: 0;
+        padding: 0;
+    }
+    .header-wrapper {
+        padding: 3px 0 20px;
+    }
+    .header-left{
+        width: fit-content;
+        
+    }
+    .top-header-wrapper > .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 767px){
+    .site-header {
+        .header-left{
+            display: none;
+        }
+        .header-right{
+            margin: auto;
+        }
+        .yith-wcwl-wrapper, .wc-cart-wrapper{
+            margin: 0;
+        }
+        .cart-section{
+            width: 158px;
+    
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .header-wrapper > .wrapper {
+        display: flex;
+    }
+    .site-logo{
+        width: fit-content;
+    }
+    .site-header .center-wrapper-mx-width{
+        .cart-section {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            & > div{
+                margin:5px 0;
+            }
+        }   
+        aside.widget.widget_basileia_product_search{
+            margin: 32px 0 32px 5px;
+        }     
+    }
+
+}
+
+@media (max-width: 340px){
+    .header-wrapper > .wrapper {
+        flex-direction: column;
+    }
+    .site-logo{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .site-header .center-wrapper-mx-width{
+        .cart-section {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10%;
+            & > div{
+                margin:5px 0;
+            }
+        }   
+        aside.widget.widget_basileia_product_search{
+            margin: 32px 0 32px 5px;
+        }     
+    }
+}
+
+@media (max-width: 260px){
+
+    .site-header .center-wrapper-mx-width{
+        flex-direction: column;
+        .cart-section {
+            flex-direction: row;
+            padding: 0;
+            & > div{
+                margin:5px 0;
+            }
+        }   
+        aside.widget.widget_basileia_product_search{
+            margin: 32px 0 32px 5px;
+        }     
+    }
+}
