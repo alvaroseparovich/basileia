@@ -28,9 +28,7 @@ input#menu-search.basileia-search {
 
 .widget_online_shop_wc_products .woocommerce.column,
 .widget_online_shop_wc_products .woocommerce.acme-slick-carausel .slick-list {
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap; }
+  padding-top: 20px; }
 
 .featured-entries-col {
   display: flex;
@@ -197,20 +195,6 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media (min-width: 768px) {
   body .mobile-only {
     display: none; } }
-/*@media (max-width: 992px){
-    /*===============================================
-    -----------------Home Page Featured---------------
-    /*===============================================*/
-    /*.page-template-template-homepage{
-        .featured-entries-col{
-            .single-list.slick-slide{
-                .loop-img{
-                    height: 35vw!important;
-                }
-            }
-        }
-    }
-}*/
 @media (max-width: 768px) {
   .page-template-template-homepage .featured-entries-col .single-list .loop-img {
     height: 40vw; }
@@ -289,6 +273,12 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     display: block;
     margin: 0 auto;
     width: max-content; }
+
+  section#basileia-main-banner-area {
+    width: 100%; }
+
+  .slider-feature-wrap.clearfix.widget-area {
+    flex-wrap: wrap; }
 
   .beside-slider.basileia-book-store {
     height: 101vw !important; }
@@ -410,9 +400,18 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
         height: 52.7vw;
         max-height: 157px; } }
 
+.slider-feature-wrap.clearfix.widget-area {
+  display: flex; }
+
+section#basileia-main-banner-area {
+  width: 70%; }
+
 @media screen and (max-width: 480px) {
   .acme-col-4, .acme-col-3 {
     width: 50%; } }
+@media (max-width: 767px) {
+  section#basileia-main-banner-area {
+    width: 100%; } }
 .footer-columns {
   display: flex;
   flex-wrap: wrap; }

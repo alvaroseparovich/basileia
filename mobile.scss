@@ -7,20 +7,7 @@ $banner-principal-h-767: 54vw!important;
 $banner-side-h-767: 50vw!important;
 $banner-side-hf-767: 101vw!important;
 
-/*@media (max-width: 992px){
-    /*===============================================
-    -----------------Home Page Featured---------------
-    /*===============================================*/
-    /*.page-template-template-homepage{
-        .featured-entries-col{
-            .single-list.slick-slide{
-                .loop-img{
-                    height: 35vw!important;
-                }
-            }
-        }
-    }
-}*/
+
 @media (max-width: 768px){
 
     .page-template-template-homepage{
@@ -145,6 +132,14 @@ $banner-side-hf-767: 101vw!important;
         }
     }
     
+
+    section#basileia-main-banner-area {
+        width: 100%;
+    }
+    .slider-feature-wrap.clearfix.widget-area{
+        flex-wrap: wrap;
+    }
+
     .beside-slider.basileia-book-store{
         height: $banner-side-hf;
         .fs-right-slider.slick-initialized.slick-slider.slick-vertical{

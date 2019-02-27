@@ -60,8 +60,11 @@ function online_shop_feature_slider() {
                 <?php
             endif;
             //Know if the especial sidebar for Basileia comerce will be load 
-            if('widget-area' == $online_shop_feature_content_options){
-                get_sidebar('basileia_home_main_space');
+            if('widget-area' == $online_shop_fs_image_display_options){
+                if( is_active_sidebar( 'basileia_home_main_space' ) ) {
+				if ( !dynamic_sidebar( 'basileia_home_main_space' ) ):
+				endif;
+			}
             }else{
                 if( 'disable' != $online_shop_feature_content_options ){
                     ?>
@@ -302,7 +305,7 @@ function online_shop_feature_slider() {
                                     $bg_image_style = 'background-image:url(' . esc_url( $image_url[0] ) . ');background-repeat:no-repeat;background-size:cover;background-position:center;';
                                 }
                                 $basileia_book_store = '';
-                                    if( 'basileia-book-store' == $online_shop_fs_image_display_options ){
+                                    if( 'basileia-book-store' == $online_shop_fs_right_image_display_options ){
                                         $basileia_book_store = true;
                                     }
                                 ?>
