@@ -295,7 +295,7 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
             display: block; }
           .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
             font-size: 1.2em;
-            width: 50vw; }
+            width: 40vw; }
 
   /*===============================================
   ---------------------Home Page-------------------
@@ -406,10 +406,6 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 section#basileia-main-banner-area {
   width: 70%;
   margin: 0; }
-
-.basileia-book-store .beside-slider-desc .slider-details {
-  width: 55%;
-  overflow-x: auto; }
 
 @media screen and (max-width: 480px) {
   .acme-col-4, .acme-col-3 {
