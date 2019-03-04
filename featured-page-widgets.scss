@@ -43,6 +43,7 @@
 }
 section#basileia-main-banner-area {
     width: 70%;
+    margin: 0;
 }
 
 
@@ -54,10 +55,21 @@ section#basileia-main-banner-area {
 }
 
 @media (max-width:1229px){}
+
+@media (min-width:641px) and (max-width:767px){
+    section#basileia-main-banner-area {
+        height: 54.8vw;
+    }
+}
+@media (max-width:640px){
+    section#basileia-main-banner-area {
+        margin: 0 0 10px;
+    }
+}
 @media (max-width:767px){
     section#basileia-main-banner-area {
-    width: 100%;
+        width: 100%;
+    }
+
 }
-}
-@media (max-width:500px){}
 @media (max-width:398px){}

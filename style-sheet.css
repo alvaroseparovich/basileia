@@ -404,11 +404,18 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   display: flex; }
 
 section#basileia-main-banner-area {
-  width: 70%; }
+  width: 70%;
+  margin: 0; }
 
 @media screen and (max-width: 480px) {
   .acme-col-4, .acme-col-3 {
     width: 50%; } }
+@media (min-width: 641px) and (max-width: 767px) {
+  section#basileia-main-banner-area {
+    height: 54.8vw; } }
+@media (max-width: 640px) {
+  section#basileia-main-banner-area {
+    margin: 0 0 10px; } }
 @media (max-width: 767px) {
   section#basileia-main-banner-area {
     width: 100%; } }
