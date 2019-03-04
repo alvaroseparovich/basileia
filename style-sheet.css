@@ -202,7 +202,7 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   /*===============================================
   -----------------Side Bar---------------
   /*===============================================*/
-  .woocommerce #content .widget-area.sidebar.secondary-sidebar {
+  body #content .widget-area.sidebar.secondary-sidebar {
     width: 100%; } }
 @media (max-width: 768px) and (min-width: 641px) {
   /*===============================================
@@ -504,5 +504,24 @@ section#basileia-main-banner-area {
         margin: 5px 0; }
     .site-header .center-wrapper-mx-width aside.widget.widget_basileia_product_search {
       margin: 32px 0 32px 5px; } }
+article.post {
+  width: 47.5%;
+  box-shadow: none; }
+  article.post .post-content {
+    padding: 0; }
+  article.post:nth-child(odd) {
+    margin-left: 2%; }
+
+main#main {
+  display: flex;
+  flex-wrap: wrap; }
+
+header.page-header {
+  width: 100%; }
+
+.entry-content p {
+  height: 100px;
+  overflow: hidden;
+  box-shadow: 0 17px 11px -20px rgba(0, 0, 0, 0.75); }
 
 /*# sourceMappingURL=style-sheet.css.map */
