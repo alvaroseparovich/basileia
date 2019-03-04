@@ -34,6 +34,9 @@
         display: flex;
         justify-content: space-between;
     }
+    /* .slider-section */ .slide-title {
+        font-size: 0.7em;
+    }
 }
 @media (max-width: 767px){
     .site-header {

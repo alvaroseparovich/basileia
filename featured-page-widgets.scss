@@ -46,7 +46,10 @@ section#basileia-main-banner-area {
     margin: 0;
 }
 
-
+.basileia-book-store .beside-slider-desc .slider-details {
+    width: 55%;
+    overflow-x: auto;
+}
 
 @media screen and (max-width: 480px){
     .acme-col-4, .acme-col-3 {
@@ -72,4 +75,9 @@ section#basileia-main-banner-area {
     }
 
 }
-@media (max-width:398px){}
+@media (min-width:769px){
+    .slider-desc{
+        padding-left: 43px;
+        width: 66%;
+    }
+}

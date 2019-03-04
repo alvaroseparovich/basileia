@@ -10,9 +10,9 @@ input#menu-search.basileia-search {
   display: flex;
   justify-content: flex-end; }
   .basileia-book-store .basileia-featured-bg img {
-    height: 378px;
+    height: 300px;
     float: none;
-    margin: 20px; }
+    margin: 10% 17px; }
 .basileia-book-store .beside-slider-desc {
   opacity: 1;
   visibility: visible; }
@@ -407,6 +407,10 @@ section#basileia-main-banner-area {
   width: 70%;
   margin: 0; }
 
+.basileia-book-store .beside-slider-desc .slider-details {
+  width: 55%;
+  overflow-x: auto; }
+
 @media screen and (max-width: 480px) {
   .acme-col-4, .acme-col-3 {
     width: 50%; } }
@@ -419,6 +423,10 @@ section#basileia-main-banner-area {
 @media (max-width: 767px) {
   section#basileia-main-banner-area {
     width: 100%; } }
+@media (min-width: 769px) {
+  .slider-desc {
+    padding-left: 43px;
+    width: 66%; } }
 .footer-columns {
   display: flex;
   flex-wrap: wrap; }
@@ -460,7 +468,11 @@ section#basileia-main-banner-area {
 
   .top-header-wrapper > .wrapper {
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  /* .slider-section */
+  .slide-title {
+    font-size: 0.7em; } }
 @media (max-width: 767px) {
   .site-header .header-left {
     display: none; }
