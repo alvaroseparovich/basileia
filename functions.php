@@ -19,6 +19,7 @@ include( get_stylesheet_directory() . '/inc/widgets/basileia-search.php' );
 include( get_stylesheet_directory() . '/inc/widgets/basileia-home-featured-sliders.php' );
 include( get_stylesheet_directory() . '/inc/func-footer.php' );
 include( get_stylesheet_directory() . '/inc/attributes-with-image.php' );
+include( get_stylesheet_directory() . '/inc/add-sidebar.php' );
 
 
 //==============================

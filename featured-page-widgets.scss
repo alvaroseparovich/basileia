@@ -38,6 +38,14 @@
     }
     
 }
+.slider-feature-wrap.clearfix.widget-area {
+    display: flex;
+}
+section#basileia-main-banner-area {
+    width: 70%;
+}
+
+
 
 @media screen and (max-width: 480px){
     .acme-col-4, .acme-col-3 {
@@ -46,6 +54,10 @@
 }
 
 @media (max-width:1229px){}
-@media (max-width:767px){}
+@media (max-width:767px){
+    section#basileia-main-banner-area {
+    width: 100%;
+}
+}
 @media (max-width:500px){}
 @media (max-width:398px){}
