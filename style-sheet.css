@@ -512,7 +512,7 @@ article.post {
   article.post:nth-child(odd) {
     margin-left: 2%; }
 
-main#main {
+.blog main#main {
   display: flex;
   flex-wrap: wrap; }
 
