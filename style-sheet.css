@@ -511,24 +511,21 @@ section#basileia-main-banner-area {
         margin: 5px 0; }
     .site-header .center-wrapper-mx-width aside.widget.widget_basileia_product_search {
       margin: 32px 0 32px 5px; } }
-article.post {
+.blog article.post, .archive article.post {
   width: 47.5%;
   box-shadow: none; }
-  article.post .post-content {
+  .blog article.post .post-content, .archive article.post .post-content {
     padding: 0; }
-  article.post:nth-child(odd) {
+  .blog article.post:nth-child(odd), .archive article.post:nth-child(odd) {
     margin-left: 2%; }
-
-.blog main#main {
+.blog main#main, .archive main#main {
   display: flex;
   flex-wrap: wrap; }
-
-header.page-header {
-  width: 100%; }
-
-.entry-content p {
+.blog .entry-content p, .archive .entry-content p {
   height: 100px;
   overflow: hidden;
   box-shadow: 0 17px 11px -20px rgba(0, 0, 0, 0.75); }
+.blog header.page-header, .archive header.page-header {
+  width: 100%; }
 
 /*# sourceMappingURL=style-sheet.css.map */
