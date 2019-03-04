@@ -18,6 +18,7 @@ input#menu-search.basileia-search {
   visibility: visible; }
   .basileia-book-store .beside-slider-desc .slider-details {
     max-height: 119px;
+    width: 64%;
     overflow: hidden; }
 .basileia-book-store .basileia-featured-bg.side-basileia img {
   width: auto;
