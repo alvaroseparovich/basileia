@@ -63,13 +63,13 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 
 .woocommerce.right-sidebar div#primary, body.right-sidebar div#primary {
   width: 74%; }
-.woocommerce .wrapper.site-content .letra-autor, body .wrapper.site-content .letra-autor {
+.woocommerce .wrapper.site-content .letra-autor, .woocommerce .wrapper.site-content .letra-editora, body .wrapper.site-content .letra-autor, body .wrapper.site-content .letra-editora {
   display: flex;
   flex-wrap: wrap; }
-  .woocommerce .wrapper.site-content .letra-autor .Letter, body .wrapper.site-content .letra-autor .Letter {
+  .woocommerce .wrapper.site-content .letra-autor .Letter, .woocommerce .wrapper.site-content .letra-editora .Letter, body .wrapper.site-content .letra-autor .Letter, body .wrapper.site-content .letra-editora .Letter {
     width: 24%;
     padding: 2em; }
-    .woocommerce .wrapper.site-content .letra-autor .Letter ul, body .wrapper.site-content .letra-autor .Letter ul {
+    .woocommerce .wrapper.site-content .letra-autor .Letter ul, .woocommerce .wrapper.site-content .letra-editora .Letter ul, body .wrapper.site-content .letra-autor .Letter ul, body .wrapper.site-content .letra-editora .Letter ul {
       list-style: none;
       padding: 0; }
 .woocommerce #content div.product div.woocommerce-product-gallery.images, body #content div.product div.woocommerce-product-gallery.images {
