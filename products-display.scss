@@ -8,6 +8,7 @@
         
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
     
     li.product {
@@ -60,6 +61,14 @@
         h3.woocommerce-loop-product__title {
             min-height: 3em;
         }
+    }
+    .woocommerce-result-count{
+        display:block;
+        width: 100%;
+    }
+    .woocommerce-ordering{
+        right: 0;
+        position: absolute;
     }
 
     @media (max-width:1229px){
