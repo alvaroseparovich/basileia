@@ -3,6 +3,12 @@ input#menu-search.basileia-search {
   padding: 2px 0px 2px 9px;
   max-width: 99%; }
 
+@media (min-width: 650px) {
+  img.mb {
+    display: none; } }
+@media (max-width: 650px) {
+  img.fll {
+    display: none; } }
 .basileia-book-store .basileia-featured-bg {
   width: 100%;
   height: 100%;
@@ -407,6 +413,27 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
       .woocommerce #content .featured-entries-col ul.products li.product div.loop-img, body #content .featured-entries-col ul.products li.product div.loop-img {
         height: 52.7vw;
         max-height: 157px; } }
+
+.featured-slider, .fs-right-slider {
+  visibility: visible; }
+
+.slick-initialized.featured-slider > div, .slick-initialized.featured-slider > div:first-child {
+  display: block; }
+.slick-initialized .at-beside-slider-unit {
+  display: block; }
+
+.featured-slider > div {
+  display: none; }
+.featured-slider > div:first-child {
+  display: block; }
+
+.at-action-wrapper > i {
+  display: none; }
+
+.at-beside-slider-unit {
+  display: none; }
+  .at-beside-slider-unit:first-child, .at-beside-slider-unit:nth-child(2) {
+    display: block; }
 
 .slider-feature-wrap.clearfix.widget-area {
   display: flex; }

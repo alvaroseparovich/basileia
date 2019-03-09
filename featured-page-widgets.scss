@@ -38,6 +38,42 @@
     }
     
 }
+//Show main feature banner before load
+.featured-slider, .fs-right-slider {
+    visibility: visible;
+}
+.slick-initialized {
+    &.featured-slider{
+        &>div, &>div:first-child{
+            display: block;
+        }
+    }
+    .at-beside-slider-unit{
+        display: block;
+    }
+}
+.featured-slider{
+    &>div{
+        display: none;
+    }
+    &>div:first-child{
+        display: block;
+    }
+}
+.at-action-wrapper > i{
+    display: none;
+}
+.beside-slider{
+}
+.at-beside-slider-unit{
+    display: none;
+    &:first-child,&:nth-child(2){
+        display: block;
+    }
+}
+
+
+
 .slider-feature-wrap.clearfix.widget-area {
     display: flex;
 }
