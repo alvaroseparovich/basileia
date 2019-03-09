@@ -68,15 +68,6 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 
 .woocommerce.right-sidebar div#primary, body.right-sidebar div#primary {
   width: 74%; }
-.woocommerce .wrapper.site-content .letra-autor, .woocommerce .wrapper.site-content .letra-editora, body .wrapper.site-content .letra-autor, body .wrapper.site-content .letra-editora {
-  display: flex;
-  flex-wrap: wrap; }
-  .woocommerce .wrapper.site-content .letra-autor .Letter, .woocommerce .wrapper.site-content .letra-editora .Letter, body .wrapper.site-content .letra-autor .Letter, body .wrapper.site-content .letra-editora .Letter {
-    width: 24%;
-    padding: 2em; }
-    .woocommerce .wrapper.site-content .letra-autor .Letter ul, .woocommerce .wrapper.site-content .letra-editora .Letter ul, body .wrapper.site-content .letra-autor .Letter ul, body .wrapper.site-content .letra-editora .Letter ul {
-      list-style: none;
-      padding: 0; }
 .woocommerce #content div.product div.woocommerce-product-gallery.images, body #content div.product div.woocommerce-product-gallery.images {
   width: 33%;
   float: left; }
@@ -570,5 +561,36 @@ section#basileia-main-banner-area {
   box-shadow: 0 17px 11px -20px rgba(0, 0, 0, 0.75); }
 .blog header.page-header, .archive header.page-header {
   width: 100%; }
+
+.letra-autor, .letra-editora {
+  display: flex;
+  flex-wrap: wrap; }
+  .letra-autor .Letter, .letra-editora .Letter {
+    width: 24%;
+    padding: 2em; }
+    .letra-autor .Letter ul, .letra-editora .Letter ul {
+      list-style: none;
+      padding: 0; }
+
+.letra-editora .lista-letra-editora {
+  display: flex;
+  flex-wrap: wrap; }
+.letra-editora div.Letter {
+  width: 100%; }
+  .letra-editora div.Letter li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 150px;
+    margin: 10px; }
+    .letra-editora div.Letter li span {
+      text-align: center; }
+
+@media (max-width: 870px) {
+  .letra-autor .Letter {
+    width: 49.8%; } }
+@media (max-width: 380px) {
+  .letra-autor .Letter {
+    width: 100%; } }
 
 /*# sourceMappingURL=style-sheet.css.map */

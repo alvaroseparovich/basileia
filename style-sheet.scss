@@ -126,26 +126,6 @@ body #content {
             width: 74%;
     }
 
-    .wrapper.site-content{
-
-        .letra-autor, .letra-editora{
-
-            display: flex;
-            flex-wrap: wrap;
-
-            .Letter {
-
-                width: 24%;
-                padding: 2em;
-
-                ul{
-
-                    list-style: none;
-                    padding: 0;
-                }
-            }
-        }
-    }
     #content {
         //=========================
         //-------Product Page------
@@ -341,3 +321,4 @@ body #content {
 @import 'footer.scss';
 @import 'header.scss';
 @import 'blog.scss';
+@import 'list-attribute-display.scss';

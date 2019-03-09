@@ -1,0 +1,53 @@
+.letra-autor, .letra-editora{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .Letter {
+
+        width: 24%;
+        padding: 2em;
+
+        ul{
+
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+.letra-editora{
+    .lista-letra-editora{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    div.Letter{
+        width: 100%;
+        li{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 150px;
+            margin: 10px;
+        
+            span{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:870px){
+    .letra-autor{
+        .Letter {
+            width: 49.8%;
+        }
+    }
+}
+@media (max-width:380px){
+    .letra-autor{
+        .Letter {
+            width: 100%;
+        }
+    }
+}
