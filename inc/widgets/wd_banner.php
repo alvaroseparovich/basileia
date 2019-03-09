@@ -96,7 +96,6 @@ class banner_img extends WP_Widget {
 		$bg_color    = isset( $instance[ 'bg_color' ] ) ? $instance[ 'bg_color' ] : '';
 		$lazy    = $instance[ 'lazy' ]? 'true' : 'false';
 
-		$img_Pathern = get_stylesheet_directory_uri() . '/none.jpg';
 		echo $before_widget; ?>
 			<?php
 
@@ -113,13 +112,7 @@ class banner_img extends WP_Widget {
 						</picture>
 						<?php
 					}else{
-						if ( $attr_image_1 and $attr_image_2 ) {
-                            /*$picture = "<picture>";
-                            $first_source = "<source media='(max-width:550px)' src='{$attr_image_1}'/>";
-                            $second_source = "<source media='(min-width:551px)' src='{$attr_image_2}'/>";
-                            $img_close = "<img src='{$attr_image_2}'></picture>";
-                            echo "{$picture}{$first_source}{$second_source}{$img_close}";*/
-                            
+						if ( $attr_image_1 and $attr_image_2 ) {                            
                             echo "<img class='fll' src='{$attr_image_1}'/> <img class='mb' src='{$attr_image_2}'/>";
 					}}
 					?>
