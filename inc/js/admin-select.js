@@ -36,7 +36,6 @@ jQuery(document).ready( function($) {
                       // and select the appropiate images in the media manager
                       var selection =  image_frame.state().get('selection');
                       var ids = Array( jQuery('input.caixa_com_id').val());
-                      console.log(ids);
 
                       ids.forEach(function(id) {
                         var attachment = wp.media.attachment(id);
