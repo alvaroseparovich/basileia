@@ -33,7 +33,6 @@ function basileia_edit_img_meta_field($term) {
         $image = '<img id="attribute-preview-image" src="https://some.default.image.jpg" />';
     }
     ?>
-	<pre> <?php var_dump($term_meta); ?><pre>
 	<tr class="form-field">
 	<th scope="row" valign="top"><label for="term_img"><?php _e( 'Imagem', 'basileia' ); ?></label></th>
 		<td>
