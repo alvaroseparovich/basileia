@@ -11,6 +11,10 @@ input#menu-search.basileia-search {
     padding: 2px 0px 2px 9px;
     max-width: 99%;
 }
+p.woocommerce-info {
+    order: -2;
+    width: 100%;
+}
 
 @media (min-width: $mobile-limit){
     img.mb{   
@@ -153,14 +157,24 @@ body #content {
         .group-sumary {
             display: flex;
             flex-wrap: wrap;
-            .price, .group,.product_meta,.woocommerce-product-book-details-seo{width: 48%;}
+            .group,.product_meta,.woocommerce-product-book-details-seo{width: 48%;}
             .woocommerce-product-book-details-seo,.product_meta{
                 border-top: 1px dotted #ddd;
                 border-bottom: 1px dotted #ddd;
                 padding: 10px 0;
             }
+            .sale-perc{
+                margin: 0.9em 5px 5px;
+                color: white;
+                background: #4595e1;
+                font-size: 1.6em;
+                z-index: 10;
+                width: fit-content;
+                padding: 0.4em;
+                /* right: 0; */
+                border-radius: 4px;
+            }
             .price{
-                padding: 2em 0 0;
                 > *{display: block;}
                 ins{
                     font-size: 2em;

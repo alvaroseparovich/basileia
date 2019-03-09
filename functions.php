@@ -20,6 +20,7 @@ include( get_stylesheet_directory() . '/inc/widgets/basileia-home-featured-slide
 include( get_stylesheet_directory() . '/inc/func-footer.php' );
 include( get_stylesheet_directory() . '/inc/attributes-with-image.php' );
 include( get_stylesheet_directory() . '/inc/add-sidebar.php' );
+include( get_stylesheet_directory() . '/inc/func-price-percentage.php' );
 
 
 //==============================

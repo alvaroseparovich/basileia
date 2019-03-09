@@ -22,6 +22,9 @@ function start_p2_block(){  echo"<div class='group group-sumary-pt2'>";  return;
 function end_block(){  echo"</div>";  return;};
 
 add_action( "woocommerce_single_product_summary", "start_price_block", 11);
+add_action( "woocommerce_single_product_summary", "start_p1_block", 11);
+add_filter( 'woocommerce_single_product_summary', 'filter_price', 14);
+add_action( "woocommerce_single_product_summary", "end_block", 16);
 add_action( "woocommerce_single_product_summary", "end_block", 35);
 add_action( "woocommerce_single_product_summary", "end_block", 55);//start an oder block
 add_action( "woocommerce_single_product_summary", "start_p2_block", 29);
@@ -101,4 +104,24 @@ function summary_seo_info(){
   
 }
   echo '</div></div>';
+}
+
+function filter_price(){
+    global $product;
+    if ( ! $product->is_on_sale() ) return;
+    if ( $product->is_type( 'simple' ) ) {
+        $max_percentage = ( ( $product->get_regular_price() - $product->get_sale_price() ) / $product->get_regular_price() ) * 100;
+    } elseif ( $product->is_type( 'variable' ) ) {
+        $max_percentage = 0;
+        foreach ( $product->get_children() as $child_id ) {
+            $variation = wc_get_product( $child_id );
+            $price = $variation->get_regular_price();
+            $sale = $variation->get_sale_price();
+            if ( $price != 0 && ! empty( $sale ) ) $percentage = ( $price - $sale ) / $price * 100;
+            if ( $percentage > $max_percentage ) {
+                $max_percentage = $percentage;
+            }
+        }
+    }
+    if ( $max_percentage > 0 ) echo "<div class='sale-perc'>-" . round($max_percentage) . "%</div>"; 
 }

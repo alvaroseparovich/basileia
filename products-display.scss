@@ -14,14 +14,22 @@
     li.product {
         margin: 0 1% 2.992em 0;
         width: 24%;
-        
+        .sale-perc {
+            margin: -14px;
+            color: white;
+            background: #4595e1;
+            z-index: 10;
+            padding: 0.2em 0.5em;
+            position: absolute;
+            border-radius: 4px;
+        }
         span.onsale {
         
             display: none;
         }
         
         .star-rating {
-        
+            display: none;
             order: -1;
             position: absolute;
         }
