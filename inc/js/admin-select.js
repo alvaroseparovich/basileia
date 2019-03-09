@@ -1,6 +1,6 @@
 jQuery(document).ready( function($) {
 
-    jQuery('input#myprefix_media_manager').click(function(e) {
+    jQuery('input#media_manager_btn').click(function(e) {
 
            e.preventDefault();
            var image_frame;
@@ -27,7 +27,7 @@ jQuery(document).ready( function($) {
                            my_index++;
                         });
                         var ids = gallery_ids.join(",");
-                        jQuery('input#myprefix_image_id').val(ids);
+                        jQuery('input.caixa_com_id').val(ids);
                         Refresh_Image(ids);
                      });
 
@@ -35,7 +35,9 @@ jQuery(document).ready( function($) {
                       // On open, get the id from the hidden input
                       // and select the appropiate images in the media manager
                       var selection =  image_frame.state().get('selection');
-                      var ids = jQuery('input#myprefix_image_id').val().split(',');
+                      var ids = Array( jQuery('input.caixa_com_id').val());
+                      console.log(ids);
+
                       ids.forEach(function(id) {
                         var attachment = wp.media.attachment(id);
                         attachment.fetch();
@@ -52,14 +54,15 @@ jQuery(document).ready( function($) {
 // Ajax request to refresh the image preview
 function Refresh_Image(the_id){
       var data = {
-          action: 'myprefix_get_image',
+          action: 'get_brand_image',
           id: the_id
       };
 
       jQuery.get(ajaxurl, data, function(response) {
 
           if(response.success === true) {
-              jQuery('#attribute-preview-image').replaceWith( response.data.image );
+            console.log("FOI");
+              jQuery('.caixa_com_id').replaceWith( response.data.image );
           }
       });
 }

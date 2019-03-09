@@ -37,7 +37,7 @@ function basileia_edit_img_meta_field($term) {
 	<th scope="row" valign="top"><label for="term_img"><?php _e( 'Imagem', 'basileia' ); ?></label></th>
 		<td>
             <?php echo $image; ?>
-            <input type="text" name="term_meta[brand_img]" id="term_meta[brand_img]" value="<?php echo $term_meta['brand_img'] ? $term_meta['brand_img'] : ''; ?>" class="regular-text" />
+            <input type="text" name="term_meta[brand_img]" id="term_meta[brand_img]" value="<?php echo $term_meta['brand_img'] ? $term_meta['brand_img'] : ''; ?>" class="regular-text caixa_com_id" />
             <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="media_manager_btn"/>
 			<br>
 			<p class="description" style="color:darkred;"><?php _e( 'SALVE PARA VER A ALTERAÇÃO DA IMAGEM!','basileia' ); ?></p>
@@ -66,3 +66,11 @@ function save_taxonomy_img_meta( $term_id ) {
 add_action( 'edited_pa_editora', 'save_taxonomy_img_meta', 10, 2 );  
 add_action( 'create_pa_editora', 'save_taxonomy_img_meta', 10, 2 );
 
+
+add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
+function load_wp_media_files( $page ) {
+  if( $page == 'term.php' || $page == 'user-edit.php' ) {
+    wp_enqueue_media();
+    wp_enqueue_script( 'brand_img_script', get_stylesheet_directory_uri().'/inc/js/admin-select.js', array('jquery'), '0.1' );
+  }
+}
