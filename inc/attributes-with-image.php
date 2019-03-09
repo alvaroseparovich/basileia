@@ -8,8 +8,8 @@ function basileia_add_img_meta_field() {
 	?>
     <div class="form-field">
         <?php echo $image; ?>
-        <input type="text" name="term_meta[brand_img]" id="term_meta[brand_img]" value="" class="regular-text" />
-        <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="media_manager_btn"/>
+        <input type="hidden" name="term_meta[brand_img]" id="term_meta[brand_img]" value="" class="regular-text" /><br>
+        <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="media_manager_btn" />
     </div>
     <?php
 
@@ -37,7 +37,7 @@ function basileia_edit_img_meta_field($term) {
 	<th scope="row" valign="top"><label for="term_img"><?php _e( 'Imagem', 'basileia' ); ?></label></th>
 		<td>
             <?php echo $image; ?>
-            <input type="text" name="term_meta[brand_img]" id="term_meta[brand_img]" value="<?php echo $term_meta['brand_img'] ? $term_meta['brand_img'] : ''; ?>" class="regular-text caixa_com_id" />
+            <input type="hidden" name="term_meta[brand_img]" id="term_meta[brand_img]" value="<?php echo $term_meta['brand_img'] ? $term_meta['brand_img'] : ''; ?>" class="regular-text caixa_com_id"/><br>
             <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="media_manager_btn"/>
 			<br>
 			<p class="description" style="color:darkred;"><?php _e( 'SALVE PARA VER A ALTERAÇÃO DA IMAGEM!','basileia' ); ?></p>
