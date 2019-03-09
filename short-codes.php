@@ -90,11 +90,16 @@ function brands_shortcode( $atts ) {
         foreach($array_brands as $k => $brand){
             $at_link = esc_url( get_term_link( $brand, $brand->name ) ) ;
             echo "<pre>";
-            $dump = var_dump($brand->meta_value);
+            $dump = var_dump($brand);
             echo "</pre>";
-            $string = $string . '<a href="'.$at_link.'"><li class="nome-editora">'.$dump.'</li></a>';
-/*             $string = $string . '<a href="'.$at_link.'"><li class="nome-editora">'.$brand->name.'</li></a>';
- */
+            /* $string = $string . '<a href="'.$at_link.'"><li class="nome-editora">'.$dump.'</li></a>'; */
+
+            $image = wp_get_attachment_image( $brand->term_id, 'medium', false, array( 'id' => 'attribute-preview-image' ) );
+
+            if($image==""){$image = '<img src="../wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="Awaiting product image" class="wp-post-image">';}
+            
+            $string = "{$string} <a href='{$at_link}'><li class='nome-editora'>{$image}<span>{$brand->name}</span></li></a>";
+    
         }
         $string = $string . '</ul></div>';
     }

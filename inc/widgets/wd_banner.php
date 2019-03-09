@@ -96,29 +96,27 @@ class banner_img extends WP_Widget {
 		$bg_color    = isset( $instance[ 'bg_color' ] ) ? $instance[ 'bg_color' ] : '';
 		$lazy    = $instance[ 'lazy' ]? 'true' : 'false';
 
-		echo $before_widget; ?>
-			<?php
-
-				?>
-				<div class="collection-block banner-adaptive">
-					<a href="<?php echo esc_url( $attr_link1 ); ?>" target="_blank">
-					<figure class="banner-adaptive-img" style="background:<?=$bg_color?>;">
-					<?php
-					if(!$lazy){
-						?>
-						<picture>
-						  <source media="(min-width: 600px)" srcset="<?=esc_url( $attr_image_1)?>">
-						  <img src="<?=esc_url( $attr_image_2 )?>" alt="Flowers" style="width:auto;">
-						</picture>
-						<?php
-					}else{
-						if ( $attr_image_1 and $attr_image_2 ) {                            
-                            echo "<img class='fll' src='{$attr_image_1}'/> <img class='mb' src='{$attr_image_2}'/>";
-					}}
-					?>
-					</figure>
-				</a>
-				</div>
+        echo $before_widget; ?>
+        
+            <div class="collection-block banner-adaptive">
+                <a href="<?php echo esc_url( $attr_link1 ); ?>" target="_blank">
+                <figure class="banner-adaptive-img" style="background:<?=$bg_color?>;">
+                <?php
+                if(!$lazy){
+                    ?>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="<?=esc_url( $attr_image_1)?>">
+                        <img src="<?=esc_url( $attr_image_2 )?>" alt="Flowers" style="width:auto;">
+                    </picture>
+                    <?php
+                }else{
+                    if ( $attr_image_1 and $attr_image_2 ) {                            
+                        echo "<img class='fll' src='{$attr_image_1}'/> <img class='mb' src='{$attr_image_2}'/>";
+                }}
+                ?>
+                </figure>
+            </a>
+            </div>
 
 			<?php
 		echo $after_widget;

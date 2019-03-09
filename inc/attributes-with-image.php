@@ -5,7 +5,7 @@ function basileia_add_img_meta_field() {
     // this will add the custom img field to the add new term page
     $image = '<img id="attribute-preview-image" src="https://some.default.image.jpg" />';
 
-?>
+	?>
     <div class="form-field">
         <?php     echo $image; ?>
         <input type="hidden" name="myprefix_image_id" id="myprefix_image_id" value="" class="regular-text" />
@@ -43,7 +43,7 @@ function basileia_edit_img_meta_field($term) {
             <?php echo $image; ?>
             <input type="hidden" name="myprefix_image_id" id="myprefix_image_id" value="<?php echo esc_attr( $t_id ); ?>" class="regular-text" />
             <input type='button' class="button-primary" value="<?php esc_attr_e( 'Select a image', 'mytextdomain' ); ?>" id="myprefix_media_manager"/>
-<br>
+			<br>
 			<p class="description" style="color:darkred;"><?php _e( 'SALVE PARA VER A ALTERAÇÃO DA IMAGEM!','basileia' ); ?></p>
 		</td>
 	</tr>
