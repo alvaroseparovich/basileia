@@ -89,12 +89,15 @@ function brands_shortcode( $atts ) {
         $string = $string . '<ul class="lista-letra-editora">';
         foreach($array_brands as $k => $brand){
             $at_link = esc_url( get_term_link( $brand, $brand->name ) ) ;
-            echo "<pre>";
-            $dump = var_dump($brand);
-            echo "</pre>";
+/*             echo "<pre>";
+            $t_id = $brand->term_id;
+            $dump = var_dump(get_option( "taxonomy_term_$t_id" ));
+            echo "</pre>"; */
             /* $string = $string . '<a href="'.$at_link.'"><li class="nome-editora">'.$dump.'</li></a>'; */
+            $t_id = $brand->term_id;
 
-            $image = wp_get_attachment_image( $brand->term_id, 'medium', false, array( 'id' => 'attribute-preview-image' ) );
+            $term_meta = get_option( "taxonomy_term_$t_id" ); 
+            $image = wp_get_attachment_image( $term_meta['brand_img'], 'medium', false, array( 'id' => 'attribute-preview-image' ) );
 
             if($image==""){$image = '<img src="../wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="Awaiting product image" class="wp-post-image">';}
             
