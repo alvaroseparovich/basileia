@@ -90,7 +90,10 @@ $banner-side-hf-767: 101vw!important;
     .slider-feature-wrap.clearfix.basileia-book-store{
         .slider-section{
             height: $banner-principal-h;
-            .slick-initialized.slick-slider{
+            .at-slide-unit{
+                height: $banner-principal-h;
+            }
+            .slick-initialized.slick-slider, .slick-slider{
                 height: $banner-principal-h;
                 .slick-list.draggable{
                     height: $banner-principal-h;
@@ -142,12 +145,13 @@ $banner-side-hf-767: 101vw!important;
 
     .beside-slider.basileia-book-store{
         height: $banner-side-hf;
-        .fs-right-slider.slick-initialized.slick-slider.slick-vertical{
+        .fs-right-slider.slick-initialized.slick-slider.slick-vertical, .fs-right-slider{
             height: $banner-side-hf;
-            .slick-list.draggable{
+
+            .slick-list.draggable, &{
                 height: $banner-side-hf;
                 
-                .no-media-query.at-beside-slider-unit.slick-slide{
+                .no-media-query.at-beside-slider-unit.slick-slide, .no-media-query.at-beside-slider-unit{
                     height: $banner-side-h;
                     img{
                         height: 45vw;

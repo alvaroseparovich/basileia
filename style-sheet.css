@@ -70,31 +70,31 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loop-product__link h3.woocommerce-loop-product__title {
   min-height: 75px; }
 
-.woocommerce.right-sidebar div#primary, body.right-sidebar div#primary {
+.woocommerce.right-sidebar #primary {
   width: 74%; }
-.woocommerce #content div.product div.woocommerce-product-gallery.images, body #content div.product div.woocommerce-product-gallery.images {
+.woocommerce #content div.product div.woocommerce-product-gallery.images {
   width: 33%;
   float: left; }
-.woocommerce #content .type-product div.summary.entry-summary, body #content .type-product div.summary.entry-summary {
+.woocommerce #content .type-product div.summary.entry-summary {
   width: 63%;
   float: right; }
-.woocommerce #content .secondary-sidebar.sidebar, body #content .secondary-sidebar.sidebar {
+.woocommerce #content .secondary-sidebar.sidebar {
   width: 25%;
   clear: none; }
-.woocommerce #content div#secondary-left, body #content div#secondary-left {
+.woocommerce #content div#secondary-left {
   float: left; }
-.woocommerce #content div#secondary-right, body #content div#secondary-right {
+.woocommerce #content div#secondary-right {
   float: right; }
-.woocommerce #content .group-sumary, body #content .group-sumary {
+.woocommerce #content .group-sumary {
   display: flex;
   flex-wrap: wrap; }
-  .woocommerce #content .group-sumary .group, .woocommerce #content .group-sumary .product_meta, .woocommerce #content .group-sumary .woocommerce-product-book-details-seo, body #content .group-sumary .group, body #content .group-sumary .product_meta, body #content .group-sumary .woocommerce-product-book-details-seo {
+  .woocommerce #content .group-sumary .group, .woocommerce #content .group-sumary .product_meta, .woocommerce #content .group-sumary .woocommerce-product-book-details-seo {
     width: 48%; }
-  .woocommerce #content .group-sumary .woocommerce-product-book-details-seo, .woocommerce #content .group-sumary .product_meta, body #content .group-sumary .woocommerce-product-book-details-seo, body #content .group-sumary .product_meta {
+  .woocommerce #content .group-sumary .woocommerce-product-book-details-seo, .woocommerce #content .group-sumary .product_meta {
     border-top: 1px dotted #ddd;
     border-bottom: 1px dotted #ddd;
     padding: 10px 0; }
-  .woocommerce #content .group-sumary .sale-perc, body #content .group-sumary .sale-perc {
+  .woocommerce #content .group-sumary .sale-perc {
     margin: 0.9em 5px 5px;
     color: white;
     background: #4595e1;
@@ -104,77 +104,80 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     padding: 0.4em;
     /* right: 0; */
     border-radius: 4px; }
-  .woocommerce #content .group-sumary .price > *, body #content .group-sumary .price > * {
+  .woocommerce #content .group-sumary .price > .woocommerce-Price-amount {
+    margin-top: 0.6em; }
+  .woocommerce #content .group-sumary .price > * {
     display: block; }
-  .woocommerce #content .group-sumary .price ins, body #content .group-sumary .price ins {
+  .woocommerce #content .group-sumary .price ins, .woocommerce #content .group-sumary .price > .woocommerce-Price-amount {
     font-size: 2em;
-    text-decoration: none; }
-.woocommerce input#menu-search.basileia-search, body input#menu-search.basileia-search {
+    text-decoration: none;
+    font-weight: 700; }
+.woocommerce input#menu-search.basileia-search {
   height: 24px;
   padding: 2px 0px 2px 9px;
   max-width: 99%; }
-.woocommerce #content .cat-links, body #content .cat-links {
+.woocommerce #content .cat-links {
   display: none !important; }
-.woocommerce #content ins, body #content ins {
+.woocommerce #content ins {
   text-decoration: none; }
-.woocommerce #content div.product .summary.entry-summary, body #content div.product .summary.entry-summary {
+.woocommerce #content div.product .summary.entry-summary {
   margin-top: 0; }
-.woocommerce #content div.product .product_title, body #content div.product .product_title {
+.woocommerce #content div.product .product_title {
   margin: 0; }
-.woocommerce #content div.product .woocommerce-product-rating, body #content div.product .woocommerce-product-rating {
+.woocommerce #content div.product .woocommerce-product-rating {
   margin-bottom: 0; }
-.woocommerce #content div.product div.title.line, .woocommerce #content div.product div.autor.line, .woocommerce #content div.product div.editora.line, body #content div.product div.title.line, body #content div.product div.autor.line, body #content div.product div.editora.line {
+.woocommerce #content div.product div.title.line, .woocommerce #content div.product div.autor.line, .woocommerce #content div.product div.editora.line {
   font-family: "Oswald", sans-serif; }
-  .woocommerce #content div.product div.title.line h2, .woocommerce #content div.product div.autor.line h2, .woocommerce #content div.product div.editora.line h2, body #content div.product div.title.line h2, body #content div.product div.autor.line h2, body #content div.product div.editora.line h2 {
+  .woocommerce #content div.product div.title.line h2, .woocommerce #content div.product div.autor.line h2, .woocommerce #content div.product div.editora.line h2 {
     font-size: 14px;
     display: inline; }
-.woocommerce #content div.product div.product_meta h2, body #content div.product div.product_meta h2 {
+.woocommerce #content div.product div.product_meta h2 {
   font-size: 14px; }
-.woocommerce #content div.product .group-sumary-pt2, body #content div.product .group-sumary-pt2 {
+.woocommerce #content div.product .group-sumary-pt2 {
   margin: 1em 0; }
-.woocommerce #content div.product .cart, body #content div.product .cart {
+.woocommerce #content div.product .cart {
   border: white;
   padding-bottom: 0; }
-  .woocommerce #content div.product .cart div.quantity.hidden, body #content div.product .cart div.quantity.hidden {
+  .woocommerce #content div.product .cart div.quantity.hidden {
     display: none; }
-  .woocommerce #content div.product .cart .quantity, body #content div.product .cart .quantity {
+  .woocommerce #content div.product .cart .quantity {
     float: none;
     display: inline; }
-    .woocommerce #content div.product .cart .quantity .qty, body #content div.product .cart .quantity .qty {
+    .woocommerce #content div.product .cart .quantity .qty {
       height: 2em; }
-    .woocommerce #content div.product .cart .quantity input[type="number"], body #content div.product .cart .quantity input[type="number"] {
+    .woocommerce #content div.product .cart .quantity input[type="number"] {
       -moz-appearance: textfield !important;
       border: none; }
-      .woocommerce #content div.product .cart .quantity input[type="number"]::-webkit-outer-spin-button, .woocommerce #content div.product .cart .quantity input[type="number"]::-webkit-inner-spin-button, body #content div.product .cart .quantity input[type="number"]::-webkit-outer-spin-button, body #content div.product .cart .quantity input[type="number"]::-webkit-inner-spin-button {
+      .woocommerce #content div.product .cart .quantity input[type="number"]::-webkit-outer-spin-button, .woocommerce #content div.product .cart .quantity input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none !important;
         margin: 0 !important; }
-  .woocommerce #content div.product .cart .counter, body #content div.product .cart .counter {
+  .woocommerce #content div.product .cart .counter {
     display: flex;
     background: #4595e1;
     border: #4595e1 2px solid; }
-  .woocommerce #content div.product .cart .btElPlus, .woocommerce #content div.product .cart .btElLess, body #content div.product .cart .btElPlus, body #content div.product .cart .btElLess {
+  .woocommerce #content div.product .cart .btElPlus, .woocommerce #content div.product .cart .btElLess {
     padding: 0.1em 5%;
     width: 50%;
     color: white;
     font-size: 2.5em;
     border: none;
     background: #4595e1; }
-  .woocommerce #content div.product .cart button[name=add-to-cart], body #content div.product .cart button[name=add-to-cart] {
+  .woocommerce #content div.product .cart button[name=add-to-cart] {
     background: #1a8400;
     border: none;
     width: 100%;
     margin: 0.5em 0 0;
     border-radius: 0.25em; }
-    .woocommerce #content div.product .cart button[name=add-to-cart]:hover, body #content div.product .cart button[name=add-to-cart]:hover {
+    .woocommerce #content div.product .cart button[name=add-to-cart]:hover {
       color: white;
       box-shadow: #1a840099 2px 2px 7px; }
-.woocommerce #content div.product .yith-wcwl-add-to-wishlist, body #content div.product .yith-wcwl-add-to-wishlist {
+.woocommerce #content div.product .yith-wcwl-add-to-wishlist {
   margin: 0; }
-.woocommerce #content div.product .stock, body #content div.product .stock {
+.woocommerce #content div.product .stock {
   font-weight: bolder; }
-  .woocommerce #content div.product .stock.in-stock, body #content div.product .stock.in-stock {
+  .woocommerce #content div.product .stock.in-stock {
     margin: 0; }
-  .woocommerce #content div.product .stock.out-of-stock, body #content div.product .stock.out-of-stock {
+  .woocommerce #content div.product .stock.out-of-stock {
     text-align: center;
     padding: 0.1em;
     border-radius: 0.25em;
@@ -182,19 +185,17 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     background: #d23f3f;
     margin: 0;
     padding: 1em 0; }
-.woocommerce #content div.product .shop_attributes h3, body #content div.product .shop_attributes h3 {
+.woocommerce #content div.product .shop_attributes h3 {
   font-size: 16px;
   margin: 0; }
-  .woocommerce #content div.product .shop_attributes h3 b, .woocommerce #content div.product .shop_attributes h3 a, body #content div.product .shop_attributes h3 b, body #content div.product .shop_attributes h3 a {
+  .woocommerce #content div.product .shop_attributes h3 b, .woocommerce #content div.product .shop_attributes h3 a {
     font-weight: 100;
     color: black;
     padding: 0.5em 0; }
-  .woocommerce #content div.product .shop_attributes h3 a, body #content div.product .shop_attributes h3 a {
-    text-decoration: underline; }
-.woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel, body #content .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel {
+.woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel {
   display: block !important;
   margin-bottom: 5em; }
-.woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs, body #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
+.woocommerce #content .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
   display: none; }
 
 .special-menu {
@@ -259,13 +260,15 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   /*===============================================*/
   .slider-feature-wrap.clearfix.basileia-book-store .slider-section {
     height: 100vw !important; }
-    .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider {
+    .slider-feature-wrap.clearfix.basileia-book-store .slider-section .at-slide-unit {
       height: 100vw !important; }
-      .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable {
+    .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider, .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-slider {
+      height: 100vw !important; }
+      .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable, .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-slider .slick-list.draggable {
         height: 100vw !important; }
-        .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track {
+        .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track, .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-slider .slick-list.draggable .slick-track {
           height: 100vw !important; }
-          .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track .slick-slide {
+          .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-initialized.slick-slider .slick-list.draggable .slick-track .slick-slide, .slider-feature-wrap.clearfix.basileia-book-store .slider-section .slick-slider .slick-list.draggable .slick-track .slick-slide {
             height: 100vw !important; }
   .slider-feature-wrap.clearfix.basileia-book-store .basileia-featured-bg img {
     width: auto;
@@ -292,18 +295,18 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 
   .beside-slider.basileia-book-store {
     height: 101vw !important; }
-    .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical {
+    .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical, .beside-slider.basileia-book-store .fs-right-slider {
       height: 101vw !important; }
-      .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable {
+      .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable, .beside-slider.basileia-book-store .fs-right-slider {
         height: 101vw !important; }
-        .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide {
+        .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit.slick-slide, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit.slick-slide, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit {
           height: 50vw !important; }
-          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide img {
+          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide img, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit img, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit.slick-slide img, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit img, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide img, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit img, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit.slick-slide img, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit img {
             height: 45vw;
             margin: 2vw 5vw; }
-          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slider-details, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .beside-slider-desc {
+          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slider-details, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit .slider-details, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit.slick-slide .slider-details, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit.slick-slide .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit .slider-details, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slider-details, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit .slider-details, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit.slick-slide .slider-details, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit.slick-slide .beside-slider-desc, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit .slider-details, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit .beside-slider-desc {
             display: block; }
-          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title {
+          .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .slick-list.draggable .no-media-query.at-beside-slider-unit .slide-title, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit.slick-slide .slide-title, .beside-slider.basileia-book-store .fs-right-slider.slick-initialized.slick-slider.slick-vertical .no-media-query.at-beside-slider-unit .slide-title, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit.slick-slide .slide-title, .beside-slider.basileia-book-store .fs-right-slider .slick-list.draggable .no-media-query.at-beside-slider-unit .slide-title, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit.slick-slide .slide-title, .beside-slider.basileia-book-store .fs-right-slider .no-media-query.at-beside-slider-unit .slide-title {
             font-size: 1.2em;
             width: 48vw; }
 
@@ -340,6 +343,8 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
   display: flex;
   flex-wrap: wrap;
   width: 100%; }
+  .woocommerce #content ul.products ins, body #content ul.products ins {
+    text-decoration: none; }
 .woocommerce #content li.product, body #content li.product {
   margin: 0 1% 2.992em 0;
   width: 24%; }

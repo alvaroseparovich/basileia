@@ -122,11 +122,11 @@ body #content {
     }
 }
     //-------Woocommerce-------
-.woocommerce, body{
+.woocommerce{
     //=========================
     //||||||||||Grid|||||||||||
     //=========================
-    &.right-sidebar div#primary{
+    &.right-sidebar #primary{
             width: 74%;
     }
 
@@ -175,10 +175,14 @@ body #content {
                 border-radius: 4px;
             }
             .price{
+                >.woocommerce-Price-amount{
+                    margin-top: 0.6em;
+                }
                 > *{display: block;}
-                ins{
+                ins, & > .woocommerce-Price-amount{
                     font-size: 2em;
                     text-decoration: none;
+                    font-weight: 700;
                 }
             }
         }
@@ -296,7 +300,6 @@ body #content {
                     padding: 0.5em 0;
 
                 }
-                a{text-decoration: underline;}
             }
 
         }
