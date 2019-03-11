@@ -136,7 +136,7 @@ function online_shop_feature_slider() {
                                 $counti = 1;
                                 while ($slider_query->have_posts()): $slider_query->the_post();
                                     if (has_post_thumbnail()) {
-                                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+                                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'basileia-main-featured' );
                                     }
                                     else {
                                         $image_url[0] = get_template_directory_uri() . '/assets/img/default-image.jpg';
@@ -296,7 +296,7 @@ function online_shop_feature_slider() {
                             $slider_query = new WP_Query( $query_args );
                             while ( $slider_query->have_posts() ): $slider_query->the_post();
                                 if (has_post_thumbnail()) {
-                                    $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+                                    $image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'basileia-beside-featured');
                                 } else {
                                     $image_url[0] = get_template_directory_uri() . '/assets/img/default-image.jpg';
                                 }
