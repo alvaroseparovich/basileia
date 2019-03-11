@@ -92,7 +92,7 @@ function summary_seo_info(){
   
   if($retrieve and !is_wp_error($retrieve) ){
   
-    echo '<div class="editora line"> Editora:';
+    echo '<div class="editora line"> Editora: ';
   
     foreach ($retrieve as $key => $value) {
   
@@ -124,4 +124,20 @@ function filter_price(){
         }
     }
     if ( $max_percentage > 0 ) echo "<div class='sale-perc'>-" . round($max_percentage) . "%</div>"; 
+}
+
+/**
+ * Change number of related products output
+ */ 
+function woo_related_products_limit() {
+    global $product;
+      
+    $args['posts_per_page'] = 4;
+    return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+function jk_related_products_args( $args ) {
+    $args['posts_per_page'] = 4; // 4 related products
+    $args['columns'] = 2; // arranged in 2 columns
+    return $args;
 }
