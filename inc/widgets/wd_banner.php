@@ -1,16 +1,14 @@
 <?php
-// Elshaddai banner com imagem
 
-
-
+// basileia banner com imagem
 class banner_img extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
 					'classname'   => 'banner collection-wrapper clearfix',
 					'description' => esc_html__( 'Display a responsive banner.', 'basileia' ) );
-                    $control_ops = array(
-                        'width'  => 200,
-                        'height' => 250,
+		$control_ops = array(
+				'width'  => 200,
+				'height' => 250
 			);
 		parent::__construct( false, $name = esc_html__( 'A-C: banner', 'basileia' ), $widget_ops, $control_ops);
 	}
@@ -49,11 +47,11 @@ class banner_img extends WP_Widget {
 			<div class="media-uploader" id="<?php echo $this->get_field_id( 'attr_image_1' ); ?>">
 				<div class="custom_media_preview">
 					<?php if ( $instance[ 'attr_image_1' ] != '' ) : ?>
-						<img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'attr_image_1' ] ); ?>" style="max-width:100%;" />
+						<img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'attr_image_1' ] ); ?>" id="<?php echo $this->get_field_id( 'attr_image_1' ); ?>" style="max-width:100%;" />
 					<?php endif; ?>
 				</div>
-				<input  type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'attr_image_1' ); ?>" name="<?php echo $this->get_field_name( 'attr_image_1' ); ?>" value="<?php echo esc_url( $instance['attr_image_1'] ); ?>" style="margin-top:5px;" />
-				
+				<input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'attr_image_1' ); ?>" name="<?php echo $this->get_field_name( 'attr_image_1' ); ?>" value="<?php echo esc_url( $instance['attr_image_1'] ); ?>" style="margin-top:5px;" />
+				<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'attr_image_1' ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'estore' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select Full Banner', 'estore' ); ?></button>
 			</div>
 		</p>
 		<hr>
@@ -62,11 +60,11 @@ class banner_img extends WP_Widget {
 			<div class="media-uploader" id="<?php echo $this->get_field_id( 'attr_image_2' ); ?>">
 				<div class="custom_media_preview">
 					<?php if ( $instance[ 'attr_image_2' ] != '' ) : ?>
-						<img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'attr_image_2' ] ); ?>" style="max-width:100%;" />
+						<img class="custom_media_preview_default" src="<?php echo esc_url( $instance[ 'attr_image_2' ] ); ?>" id="<?php echo $this->get_field_id( 'attr_image_2' ); ?>"  style="max-width:100%;" />
 					<?php endif; ?>
 				</div>
 				<input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'attr_image_2' ); ?>" name="<?php echo $this->get_field_name( 'attr_image_2' ); ?>" value="<?php echo esc_url( $instance['attr_image_2'] ); ?>" style="margin-top:5px;" />
-				
+				<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'attr_image_2' ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'estore' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select Mobile Banner', 'estore' ); ?></button>
 			</div>
 		</p>
 		<?php
@@ -87,15 +85,12 @@ class banner_img extends WP_Widget {
 	function widget( $args, $instance ) {
 		extract( $args );
 		extract( $instance );
-
 		global $post;
-
 		$attr_link1   = isset( $instance[ 'attr_link1' ] ) ? $instance[ 'attr_link1' ] : '';
 		$attr_image_1   = isset( $instance[ 'attr_image_1' ] ) ? $instance[ 'attr_image_1' ] : '';
 		$attr_image_2    = isset( $instance[ 'attr_image_2' ] ) ? $instance[ 'attr_image_2' ] : '';
 		$bg_color    = isset( $instance[ 'bg_color' ] ) ? $instance[ 'bg_color' ] : '';
 		$lazy    = $instance[ 'lazy' ]? 'true' : 'false';
-
         echo $before_widget; ?>
         
             <div class="collection-block banner-adaptive">

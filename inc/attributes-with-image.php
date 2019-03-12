@@ -69,8 +69,6 @@ add_action( 'create_pa_editora', 'save_taxonomy_img_meta', 10, 2 );
 
 add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
 function load_wp_media_files( $page ) {
-  if( $page == 'term.php' || $page == 'user-edit.php' ) {
     wp_enqueue_media();
     wp_enqueue_script( 'brand_img_script', get_stylesheet_directory_uri().'/inc/js/admin-select.js', array('jquery'), '0.1' );
-  }
 }
