@@ -29,6 +29,9 @@ p.woocommerce-info {
         display:none;
     }
 }
+.woocommerce form .form-row-first, .woocommerce-page form .form-row-first {
+    clear: both;
+}
 //=========================
 //-----Featured section----
 //=========================
