@@ -19,13 +19,11 @@ include( get_stylesheet_directory() . '/inc/func-price-percentage.php' );
 include( get_stylesheet_directory() . '/inc/func-img.php' );
 
 
-//==============================
-//----------Pre set-up----------
-//==============================
-//function basileia_setup() {
-  // Cropping the images to different sizes to be used in the theme
-  //add_image_size( 'basileia-medium-image', 240, 240);
-  //add_image_size( 'basileia-small', 110, 120);
-  // Cropping the images to different sizes to be used in the theme **************REMOVE*****************
-//}
-//add_action( 'after_setup_theme', 'basileia_setup', 11 );
+add_filter( 'woocommerce_bacs_account_fields', 'custom_bacs_account_field', 10, 2);
+function custom_bacs_account_field( $account_fields, $order_id ) {
+    $account_fields['cnpj' ] = array(
+        'label' => 'CNPJ',
+         'value' => '30.096.589/0001-34'
+    );
+    return $account_fields;
+}
