@@ -209,6 +209,10 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media (min-width: 768px) {
   body .mobile-only {
     display: none; } }
+li.product-category.product mark {
+  background: #ffffff00;
+  color: black; }
+
 body.woocommerce ul.products li.product a img {
   height: 128px;
   margin: auto;

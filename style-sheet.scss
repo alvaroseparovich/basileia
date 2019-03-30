@@ -340,6 +340,10 @@ body #content {
     }
 }
 
+li.product-category.product mark {
+    background: #ffffff00;
+    color: black;
+}
 body.woocommerce ul.products li.product a img{
     height: 128px;
     margin: auto;
