@@ -130,4 +130,25 @@
             }
         }
     }
+
+    .button.product_type_simple.add_to_cart_button {
+        background: green;
+        border: none;
+        &:hover{
+            @include buttHover();
+        }
+    }
+
 }
+
+
+.woocommerce, body #page{
+    .widget.woocommerce.widget_shopping_cart .button.checkout, .checkout-button.button.alt, #place_order{
+        background: green;
+        border: none;
+        &:hover{
+            @include buttHover();
+        }
+    }
+
+} 

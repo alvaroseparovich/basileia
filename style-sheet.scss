@@ -5,6 +5,12 @@ $color-2: #2b3e5e;
 $mobile-limit:650px;
 
 
+@mixin buttHover() {
+    color: white;
+    box-shadow: #1a840099 2px 2px 7px;
+}
+
+
 
 input#menu-search.basileia-search {
     height: 24px;
@@ -273,8 +279,7 @@ body #content {
                     border-radius: 0.25em;
 
                     &:hover{
-                        color: white;
-                        box-shadow: #1a840099 2px 2px 7px;
+                        @include buttHover();
                     }
                 }
             }
@@ -334,6 +339,8 @@ body #content {
         display: none;
     }
 }
+
+
 
 @import 'mobile.scss';
 @import 'products-display.scss';

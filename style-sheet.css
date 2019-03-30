@@ -414,6 +414,19 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
     .woocommerce #content ul.products li.product .loop-img, body #content ul.products li.product .loop-img {
       height: 62vw;
       max-height: 246px; } }
+.woocommerce #content .button.product_type_simple.add_to_cart_button, body #content .button.product_type_simple.add_to_cart_button {
+  background: green;
+  border: none; }
+  .woocommerce #content .button.product_type_simple.add_to_cart_button:hover, body #content .button.product_type_simple.add_to_cart_button:hover {
+    color: white;
+    box-shadow: #1a840099 2px 2px 7px; }
+
+.woocommerce .widget.woocommerce.widget_shopping_cart .button.checkout, .woocommerce .checkout-button.button.alt, .woocommerce #place_order, body #page .widget.woocommerce.widget_shopping_cart .button.checkout, body #page .checkout-button.button.alt, body #page #place_order {
+  background: green;
+  border: none; }
+  .woocommerce .widget.woocommerce.widget_shopping_cart .button.checkout:hover, .woocommerce .checkout-button.button.alt:hover, .woocommerce #place_order:hover, body #page .widget.woocommerce.widget_shopping_cart .button.checkout:hover, body #page .checkout-button.button.alt:hover, body #page #place_order:hover {
+    color: white;
+    box-shadow: #1a840099 2px 2px 7px; }
 
 .woocommerce #content .featured-entries-col ul.products li.product, body #content .featured-entries-col ul.products li.product {
   width: 100%; }
@@ -525,14 +538,20 @@ section#basileia-main-banner-area {
   .slide-title {
     font-size: 0.7em; } }
 @media (max-width: 767px) {
-  .site-header .header-left {
-    display: none; }
-  .site-header .header-right {
-    margin: auto; }
-  .site-header .yith-wcwl-wrapper, .site-header .wc-cart-wrapper {
-    margin: 0; }
-  .site-header .cart-section {
-    width: 158px; } }
+  .site-header {
+    /* .header-right{
+        margin: auto;
+    } */ }
+    .site-header .header-left {
+      /* display: none; */ }
+      .site-header .header-left .icon-box > .icon-box {
+        display: none; }
+      .site-header .header-left .icon-box > .icon-box:first-child {
+        display: block; }
+    .site-header .yith-wcwl-wrapper, .site-header .wc-cart-wrapper {
+      margin: 0; }
+    .site-header .cart-section {
+      width: 158px; } }
 @media (max-width: 500px) {
   .header-wrapper > .wrapper {
     display: flex; }

@@ -41,11 +41,20 @@
 @media (max-width: 767px){
     .site-header {
         .header-left{
-            display: none;
+            /* display: none; */
+            .icon-box{
+                &>.icon-box{
+                    display: none;
+                }
+                &>.icon-box:first-child{
+                    display: block;
+                }
+                
+            }
         }
-        .header-right{
+        /* .header-right{
             margin: auto;
-        }
+        } */
         .yith-wcwl-wrapper, .wc-cart-wrapper{
             margin: 0;
         }
