@@ -209,6 +209,11 @@ body #content .at-cat-product-wrap .woocommerce-LoopProduct-link.woocommerce-loo
 @media (min-width: 768px) {
   body .mobile-only {
     display: none; } }
+body.woocommerce ul.products li.product a img {
+  height: 128px;
+  margin: auto;
+  width: auto; }
+
 @media (max-width: 768px) {
   .page-template-template-homepage .featured-entries-col .single-list .loop-img {
     height: 40vw; }

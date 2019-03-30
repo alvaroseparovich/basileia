@@ -340,6 +340,11 @@ body #content {
     }
 }
 
+body.woocommerce ul.products li.product a img{
+    height: 128px;
+    margin: auto;
+    width: auto;
+}
 
 
 @import 'mobile.scss';
